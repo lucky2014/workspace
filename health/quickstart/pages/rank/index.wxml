@@ -1,0 +1,39 @@
+<view class="header">
+  <image src="../imgs/bg.jpg" class="bg" /> 
+
+  <div class="circle" bindtap="goDetail"><image src="../imgs/circle.png" /></div>
+  <view class="circleGoals" bindtap="goDetail">
+  		<text class="normal">今日步数</text>
+  		<text class="big">5000</text>
+  		<text class="small">目标10000步</text>
+  </view>
+  <canvas id="canvasThree3" style="width:210px; height:210px; display:block;"></canvas>
+
+  <view class="desc" bindtap="goDesc"><image src="../imgs/qa.png" />活动说明</view>
+  <view class="goals" bindtap="goGoals"><image src="../imgs/w.png" />目标</view>
+</view>
+
+<view class="summary">
+	<view class="left">周排行榜<text>(第四名)</text></view>
+	<view class="right" bindtap="goWeekRank">查看上周 ></view>
+</view>
+
+
+<view wx:for="{{stepList}}" class="details flex-wrp" style="flex-direction:row;">
+	<view wx:if="{{item.image}}"><image src="{{item.image}}" class="cup" /></view>
+	<view wx:else class="cup" style="text-align:center;">{{item.sort}}</view>
+	<image src="{{item.avatarUrl}}" class="avatarUrl" />
+	<text>{{item.nickName}}</text>
+	<view class="jobNumber">({{item.jobNumber}})</view>
+	<view class="step"><view>{{item.step}}</view>步</view>
+</view>
+
+
+
+
+
+
+
+
+
+

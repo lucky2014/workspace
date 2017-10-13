@@ -1,0 +1,19 @@
+<view class="phone_one" bindtap="clickPerson">
+  <view class="phone_personal">{{firstPerson}}</view>
+  <image src="../imgs/b1.jpg" class="personal_image {{selectArea ? 'rotateRight' :''}}"></image> //三目法判断图片要不要旋转180。
+  </view>
+ 
+<view class="person_box">
+   <view class="phone_select" hidden="{{selectPerson}}">
+    <view class="select_one" bindtap="mySelect" data-me="你好">你好</view>
+    <view class="select_one" bindtap="mySelect" data-me="他好">他好</view>
+    <view class="select_one" bindtap="mySelect" data-me="大家好">大家好</view>
+  </view>
+ </view>
+
+
+ <picker bindchange="bindPickerChange" value="{{areaIndex}}" range="{{area}}">  
+    <view class="picker">  
+      当前选择：{{area[areaIndex]}}  
+    </view>  
+</picker>  

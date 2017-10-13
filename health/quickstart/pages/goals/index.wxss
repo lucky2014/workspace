@@ -1,0 +1,6 @@
+.setGoals{ clear:both; border:1px solid #dddce0; border-radius:6px; background:#fff; margin: 10px 20px; text-align:center; position:relative;}
+.goalsText{ padding:0 20px; line-height:30px; padding-top:4px; display:block; color:#56535c}
+.setGoals image.m{ width:50px; height:50px; vertical-align: middle; margin-right:26px; padding:6px;}
+.setGoals text{ padding-left:26px; color:#56535c; line-height:60px;display:inline-block;}
+.setGoals image.tt{ position:absolute; left:0; top:0; width:40px; height:40px;}
+.setGoals.active{ border:1px solid #2b8ff2;}

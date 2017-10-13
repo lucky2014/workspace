@@ -1,0 +1,12 @@
+
+page{
+    background-color:#f8f8f8; color:#56535c;
+}
+
+.btn_area{ clear:both; margin:20px 20px 0;}
+.btn_area button{ color:#fff; background:#2b8ff2; line-height:2.3;}
+
+
+
+
+

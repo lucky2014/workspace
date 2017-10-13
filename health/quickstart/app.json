@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/rank/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "dddd",
+    "navigationBarTextStyle":"#333",
+    "navigationBarTitleText": "运动大比拼"
+  },
+  "tabBar": {
+      "list": [
+        {
+          "pagePath": "pages/rank/index",
+          "text": "首页",
+          "iconPath": "",
+          "selectedIconPath": ""
+        },
+        {
+          "pagePath": "pages/rank/index",
+          "text": "运动大比拼",
+          "iconPath": "",
+          "selectedIconPath": ""
+        }
+      ],
+      "backgroundColor": "#000000",
+      "color": "#ffffff"
+  }
+}

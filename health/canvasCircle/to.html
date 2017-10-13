@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+	<title>首页</title>
+</head>
+<body>
+<canvas id="myCanvas" style="width:400px; height:400px;"></canvas>
+<script>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.arc(50,50,50,0,2*Math.PI);
+ctx.stroke();
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.header{background:#fff; margin-bottom:15px; padding:6px 20px; font-size:1.1rem;}
+.header image{ width:44px; height:44px; vertical-align:middle; margin-right:12px;}
+
+.details{ clear:both; border-bottom:1px solid #e6e6e6; padding: 6px 20px; overflow:hidden; background:#fff;}
+.details .flex-item{ width:50%; float:left; display:inline;}
+.details .golas{ display:block; color:#8d96a8; font-size:.9rem; padding-top:4px;}
+.details .step{ text-align:right; font-size:1.3rem; color:#2e3033; padding-top:9px;}
+
+.details .date{ color:#2e3033;}

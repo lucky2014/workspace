@@ -1,0 +1,17 @@
+<view class="descHeader">
+	<image src="../imgs/st2.png" />
+	<text>活动说明</text>
+</view>
+
+
+<view class="content">
+	<view>所有参与“运动大比拼”活动的小伙伴每天的运动步数都会被系统记录哦~步数将会累积，每周进行排名。</view>
+    <view>每周累积步数按降序排名，次周累积步数将清零，从新累积。</view>
+    <view>步数累积周期为每周一0:00点至周日23:59:59。</view>
+    <view>每周公司将对排名前3的小伙伴颁发奖励呦~</view>
+</view>
+
+
+
+
+

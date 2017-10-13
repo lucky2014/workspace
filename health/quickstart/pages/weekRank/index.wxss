@@ -1,0 +1,38 @@
+page{ background-color:#efefef; color:#535965;}
+.header{background:#fff; padding:0 0 20px; position:relative; height:270px;}
+.header image.bg{ width:100%; height:70px; position:absolute; bottom:0; left:0; z-index:1;}
+.circle{ width:210px; height:210px; border-radius:100%; position:absolute; left:50%; margin-left:-105px; top:60px; z-index:2;}
+.circle image{ width:210px; height:210px;}
+
+.circleGoals{ width:210px; height:160px; padding-top:50px; position:absolute; left:50%; margin-left:-105px; top:60px; z-index:3; text-align:center;}
+.circleGoals text{ display:block;}
+.circleGoals .normal{color:#5c637;}
+.circleGoals .big{color:#5c637; font-size:2.1rem; line-height:56px; color:#2e3033;}
+.circleGoals .small{color:#5c637; font-size:.9rem; color:#8d96a8;}
+
+
+.firstCanvas{ width:180px; height:200px; top:50px; position:absolute; left:50%; margin-left:-90px; z-index:99;}
+
+.header .desc{ position:absolute; left:14px; top:22px;}
+.header .goals{ position:absolute; right:-1px; top:14px; border:1px solid #2b8ff2; border-top-left-radius:30px; border-bottom-left-radius:30px; padding:4px 10px;}
+.header .desc image,.header .goals image{ width:22px; height:22px; vertical-align: top; display:inline-block; margin-right:6px;}
+
+
+
+.summary{ clear:both; overflow:hidden; background:#fafafa; padding: 10px 14px; margin-bottom:14px; font-size:1.04rem;
+}
+.summary .left{ float:left;}
+.summary .right{ float:right;}
+
+.details{ clear:both; border-bottom:1px solid #e6e6e6; padding: 6px 14px; overflow:hidden; background:#fafafa;}
+
+.details view,.details text,.details image{ float:left; display:inline; line-height:48px;}
+
+.details .nickName{float:left;}
+.details view.jobNumber{ color:#7d8799}
+.details .golas{ display:block; color:#8d96a8; font-size:.9rem; padding-top:4px;}
+.details view.step{ text-align:right; float:right; width:30%;}
+.details view.step view{ float:none; text-align:right; color:#2b8ff2;}
+.details image.cup{ width:26px; height:30px; float:left; display:inline; vertical-align:top; margin:8px 6px 0 0;}
+.details view.cup{ width:26px; height:30px; float:left; display:inline-block; vertical-align:top; margin:8px 6px 0 0; text-aligh:center; line-height:30px;}
+.details image.avatarUrl{ width:48px; height:48px; float:left; display:inline; vertical-align:middle; border-radius:12px; margin-right:6px;}

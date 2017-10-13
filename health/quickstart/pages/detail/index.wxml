@@ -1,0 +1,12 @@
+<view class="header">
+  <image src="../imgs/st2.png" /> 步数详情
+</view>
+
+
+<view wx:for="{{stepList}}" class="details flex-wrp" style="flex-direction:row;">
+	<view class="flex-item">
+		<text class="date">{{item.date}}</text>
+		<text class="golas">(目标步数{{item.goals}})</text>
+	</view>
+  	<text class="step flex-item">{{item.step}}步</text>
+</view>

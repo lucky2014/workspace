@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/reg/index",
+    "pages/logs/logs",
+    "pages/goals/index",
+    "pages/down/index",
+    "pages/detail/index",
+    "pages/rank/index",
+    "pages/desc/index",
+    "pages/weekRank/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "dddd",
+    "navigationBarTextStyle":"#333",
+    "navigationBarTitleText": "运动大比拼"
+  },
+  "tabBar": {
+      "list": [
+        {
+          "pagePath": "pages/rank/index",
+          "text": "首页",
+          "iconPath": "",
+          "selectedIconPath": ""
+        },
+        {
+          "pagePath": "pages/rank/index",
+          "text": "运动大比拼",
+          "iconPath": "",
+          "selectedIconPath": ""
+        }
+      ],
+      "backgroundColor": "#000000",
+      "color": "#ffffff"
+  }
+}
