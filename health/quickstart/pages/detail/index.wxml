@@ -3,10 +3,10 @@
 </view>
 
 
-<view wx:for="{{stepList}}" class="details flex-wrp" style="flex-direction:row;">
+<view wx:for="{{stepList}}" wx:for-index='key' class="details flex-wrp" style="flex-direction:row;">
 	<view class="flex-item">
-		<text class="date">{{item.date}}</text>
-		<text class="golas">(目标步数{{item.goals}})</text>
+		<text class="date">{{item.stepsDate}}</text>
+		<text class="golas">(目标步数{{item.stepsGoal}})</text>
 	</view>
-  	<text class="step flex-item">{{item.step}}步</text>
+  	<text class="step flex-item">{{item.stepsDay}}步</text>
 </view>

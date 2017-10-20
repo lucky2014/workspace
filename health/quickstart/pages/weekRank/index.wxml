@@ -2,18 +2,21 @@
 
 <view class="summary">
 	<view class="left">上周排行榜</view>
-	<view class="right">第24名</view>
+	<view class="right" style="display:{{currentUserRankShow}}">第{{currentUserRank}}名</view>
 </view>
 
 
-<view wx:for="{{stepList}}" class="details flex-wrp" style="flex-direction:row;">
-	<view wx:if="{{item.image}}"><image src="{{item.image}}" class="cup" /></view>
-	<view wx:else class="cup" style="text-align:center;">{{item.sort}}</view>
-	<image src="{{item.avatarUrl}}" class="avatarUrl" />
-	<text>{{item.nickName}}</text>
-	<view class="jobNumber">({{item.jobNumber}})</view>
-	<view class="step"><view>{{item.step}}</view>步</view>
+<view wx:for="{{stepList}}" wx:key="{{stepsRank}}" class="details flex-wrp" style="flex-direction:row;">
+  <view wx:if="{{item.image}}"><image src="{{item.image}}" class="cup" /></view>
+  <view wx:else class="cup" style="text-align:center;">{{item.stepsRank}}</view>
+
+  <image src="{{item.employeeImageUrl}}" class="avatarUrl" />
+  <text>工号 {{item.employeeNumber}}</text>
+  <view class="jobNumber">({{item.employeeNickName}})</view>
+  <view class="step"><view>{{item.stepsWeek}}</view>步</view>
 </view>
+
+<view style="display:{{noDisplay}}" class="noDisplay">暂无数据！</view>
 
 
 

@@ -3,5 +3,7 @@
 .descHeader image,.descHeader text{ display:inline-block; vertical-align: top; line-height:30px;}
 .descHeader image{ width:32px; height:32px; margin-right:6px;}
 
-.content{ margin-top:12px; padding:16px 12px 6px; line-height:24px; background:#fff;}
-.content view{ text-indent:2em; padding:0 0 12px; color:#596b87;}
+.content{ margin-top:12px; padding:16px 16px 6px; line-height:24px; background:#fff;}
+.content>view{ overflow:hidden; padding:0 0 12px; color:#596b87;}
+.content>view label{ float:left; width:8%;}
+.content>view view{ float:left; width:92%; text-align:justify;}

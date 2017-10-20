@@ -4,7 +4,7 @@
 
 <p class="goalsText">从设定一个小目标开始，激励自己吧~</p>
 
-<view wx:for="{{goals}}" class="setGoals {{currentItem==item.index ? 'active' : '' }}"  bindtap="setActive" data-index="{{item.index}}">
+<view wx:for="{{goals}}" wx:key="{{index}}" class="setGoals {{currentItem==item.index ? 'active' : '' }}"  bindtap="setActive" data-index="{{item.index}}" data-step="{{item.step}}">
 	<view wx:if="{{item.index==0}}"><image src="../imgs/tt.png" class="tt" /></view>
 	<image src="../imgs/st.png" class="m" />
   	<text>每天{{item.step}}步</text>

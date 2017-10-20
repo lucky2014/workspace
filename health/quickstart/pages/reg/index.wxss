@@ -1,13 +1,20 @@
 
 
 .wrap{ background-color:#fff; padding-bottom:20px;}
-.section, picker{ clear:both; border-bottom:1px solid #ebebeb; padding: 0 10px;}
-.section p,.section label,.section a{ line-height:40px; height:40px; display:inline-block; vertical-align: top;}
+.section, picker{ clear:both; border-bottom:1px solid #ebebeb; padding: 0 10px; position:relative;}
+.section p,.section label,.section view{ line-height:38px; height:40px; display:inline-block; vertical-align: top;}
+picker image{ position:absolute; right:10px; top:11px;}
 .section label{ width: 25%;}
 .section p{ width: 75%;}
 .section input{ width: 100%; margin-top:10px;}
-.section p.yzm_area{ width:40%;}
-.section a{ width: 33%; color: #2b8ff2; padding-left:1%; text-align:center; border-left:1px solid #ebebeb;}
+.section p.yzm_area{ width:36%;}
+.section view{ width: 35%; color: #2b8ff2; padding-left:10px; text-align:center; border-left:1px solid #ebebeb; font-size:.9rem; margin-top:0; line-height:30px;}
+.section view button{ border-width:0;
+border-radius:0;
+background-color:#fff; color:#2b8ff2;
+line-height:38px;
+font-size:.9rem; padding:0;}
+.section view button::after{border-width:0;}
 
 .btn_area{ clear:both; margin:20px 10px 0;}
 .btn_area button{ color:#fff; background:#2b8ff2;}

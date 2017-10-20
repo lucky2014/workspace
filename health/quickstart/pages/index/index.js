@@ -15,6 +15,12 @@ Page({
       url: '../logs/logs'
     })
   },
+  formSubmit: function(e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+  },
+  formReset: function() {
+    console.log('form发生了reset事件')
+  }
   //事件处理函数
   bindRegister: function () {
     wx.navigateTo({
