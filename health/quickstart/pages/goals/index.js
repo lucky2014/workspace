@@ -25,7 +25,7 @@ Page({
   goRank: function(){
     var me = this;
     wx.request({
-      url: 'https://yun.iliujia.com/liujia-health-server/health/saveStepsGoal.do',
+      url: 'https://wx.yinnima.com/liujia-health-server/health/saveStepsGoal.do',
       data: {
         stepsGoal: me.data.step,
         openId: app.globalData.openId,
@@ -54,7 +54,7 @@ Page({
   onLoad: function(){
     var me = this;
     wx.request({
-      url: 'https://yun.iliujia.com/liujia-health-server/health/checkHasSetStepsGoal.do',
+      url: 'https://wx.yinnima.com/liujia-health-server/health/checkHasSetStepsGoal.do',
       data: {
         openId: app.globalData.openId
       },
@@ -63,6 +63,7 @@ Page({
           'content-type': 'application/x-www-form-urlencoded'
       },
       success: function (re) {
+
         var currentItem = 0;
         if(re.data.returnObject == 15000){
           currentItem = 2;

@@ -9,7 +9,7 @@ Page({
     var me = this;
     //获取员工步数列表
     wx.request({
-      url: 'https://yun.iliujia.com/liujia-health-server/health/listStepsRecords.do',
+      url: 'https://wx.yinnima.com/liujia-health-server/health/listStepsRecords.do',
       data: {
         openId: app.globalData.openId,
       },

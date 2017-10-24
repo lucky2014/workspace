@@ -12,7 +12,8 @@ Page({
     smsCodeValue: "获取验证码",
     times: 60,
     disabled: false,
-    submitDisabled: false
+    submitDisabled: false,
+    isDisplay: "none"
   },
   bindPickerChange: function(e){  
     this.setData({  
@@ -27,32 +28,89 @@ Page({
     });  
   },
   onLoad: function(){
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
+    var me = this;
+
+    wx.login({
+      success: res => {
+        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        if (app.globalData.userInfo) {
           this.setData({
-            userInfo: res.userInfo,
+            userInfo: app.globalData.userInfo,
             hasUserInfo: true
           })
+        }else {
+          // 在没有 open-type=getUserInfo 版本的兼容处理
+          wx.getUserInfo({
+            success: res => {
+              app.globalData.userInfo = res.userInfo
+              this.setData({
+                userInfo: res.userInfo,
+                hasUserInfo: true
+              })
+            }
+          })
+        };
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'https://wx.yinnima.com/liujia-health-server/health/getLoginInfoByCode.do',
+            data: {
+              code: res.code
+            },
+            method: "post",
+            header: {
+                'content-type': 'application/x-www-form-urlencoded'
+            },
+            success: function (re) {
+              if(re.data.resultCode == 1000){
+                wx.setStorageSync('openId', re.data.returnObject);
+                app.globalData.openId = re.data.returnObject;
+                me.checkHasAuthen(re.data.returnObject);
+              }
+            }
+          });
+        } else {
+          //console.log('获取用户登录态失败！' + res.errMsg)
+          wx.showModal({
+            title: '提示',
+            content: '获取用户登录态失败！',
+            success: function(d) {
+              if (d.confirm) {
+                
+              } else if (d.cancel) {
+                
+              }
+            }
+          })
         }
-      })
-    }
+      }
+    });
+  },
+  checkHasAuthen: function(openId){
+    var me = this;
+    wx.request({
+      url: 'https://wx.yinnima.com/liujia-health-server/health/checkHasAuthen.do',
+      data: {
+        employeeOpenid: openId
+      }, 
+      method: "post",
+      header: {
+          'content-type': 'application/x-www-form-urlencoded'
+      },
+      success: function (res) {
+        if(res.data.resultCode == 1000){
+          me.setData({
+            isDisplay: "none"
+          });
+          //检验是否绑定目标步数
+          me.checkHasSetStepsGoal();
+        }else{
+          me.setData({
+            isDisplay: "block"
+          });
+        }
+      }
+    });
   },
   bindInputPhone: function(e){
     this.setData({
@@ -81,7 +139,7 @@ Page({
       });
 
       wx.request({
-        url: 'https://yun.iliujia.com/liujia-health-server/health/getSmsCode.do',
+        url: 'https://wx.yinnima.com/liujia-health-server/health/getSmsCode.do',
         data: {
           openId: app.globalData.openId,
           phone: me.data.phone
@@ -150,7 +208,7 @@ Page({
       });
 
       wx.request({
-        url: 'https://yun.iliujia.com/liujia-health-server/health/updateUserInfoAuthenBind.do',
+        url: 'https://wx.yinnima.com/liujia-health-server/health/updateUserInfoAuthenBind.do',
         data: datas,
         method: "post",
         header: {
@@ -158,27 +216,8 @@ Page({
         },
         success: function (res) {
           if(res.data.resultCode == 1000){
-            wx.request({
-              url: 'https://yun.iliujia.com/liujia-health-server/health/checkHasSetStepsGoal.do',
-              data: {
-                openId: app.globalData.openId
-              },
-              method: "post",
-              header: {
-                  'content-type': 'application/x-www-form-urlencoded'
-              },
-              success: function (re) {
-                if(re.data.resultCode == 1000){
-                  wx.reLaunch({
-                    url: '/pages/rank/index'
-                  });
-                }else{
-                  wx.reLaunch({
-                    url: '/pages/goals/index'
-                  });
-                }
-              }
-            });
+            //提交确认
+            me.checkHasSetStepsGoal();
 
             me.setData({
               submitDisabled: !me.data.submitDisabled
@@ -187,12 +226,12 @@ Page({
             wx.showModal({
               title: '提示',
               content: '您的信息无法绑定。请联系健康管理工作人员处理！',
-              success: function(res) {
-                if (res.confirm) {
+              success: function(d) {
+                if (d.confirm) {
                   me.setData({
                     submitDisabled: !me.data.submitDisabled
                   });
-                } else if (res.cancel) {
+                } else if (d.cancel) {
                   me.setData({
                     submitDisabled: !me.data.submitDisabled
                   });
@@ -204,4 +243,27 @@ Page({
       });
     }
   },
+  checkHasSetStepsGoal: function(){
+    wx.request({
+      url: 'https://wx.yinnima.com/liujia-health-server/health/checkHasSetStepsGoal.do',
+      data: {
+        openId: app.globalData.openId
+      },
+      method: "post",
+      header: {
+          'content-type': 'application/x-www-form-urlencoded'
+      },
+      success: function (re) {
+        if(re.data.resultCode == 1000){
+          wx.reLaunch({
+            url: '/pages/rank/index'
+          });
+        }else{
+          wx.reLaunch({
+            url: '/pages/goals/index'
+          });
+        }
+      }
+    });
+  }
 })

@@ -8,7 +8,7 @@ Page({
   onLoad: function() {
     var me = this;
     wx.request({
-      url: 'https://yun.iliujia.com/liujia-health-server/health/getUserStepsWeekSortBefore.do',
+      url: 'https://wx.yinnima.com/liujia-health-server/health/getUserStepsWeekSortBefore.do',
       data: {
         openId: app.globalData.openId,
         sortKey: 1
@@ -28,8 +28,8 @@ Page({
               var employeeNickName = userSort[i].employeeNickName;
 
               if(/^[A-Za-z\.\-\_\+\$\*\%\@\#\!]+$/.test(employeeNickName)){
-                if(employeeNickName.length>9){
-                  userSort[i].employeeNickName = userSort[i].employeeNickName.substring(0,9)+"..."; 
+                if(employeeNickName.length>8){
+                  userSort[i].employeeNickName = userSort[i].employeeNickName.substring(0,8)+"..."; 
                 }
               }else{
                 if(employeeNickName.length>5){

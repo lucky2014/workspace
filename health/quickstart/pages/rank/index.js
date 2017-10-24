@@ -31,7 +31,7 @@ Page({
         success(res) {
           const encryptedData = res.encryptedData;
           wx.request({
-            url: 'https://yun.iliujia.com/liujia-health-server/health/updateEmployeeStepInfo.do',
+            url: 'https://wx.yinnima.com/liujia-health-server/health/updateEmployeeStepInfo.do',
             data: {
               encryptedData: encryptedData,
               iv: res.iv,
@@ -54,8 +54,8 @@ Page({
                   var employeeNickName = userSort[i].employeeNickName;
 
                   if(/^[A-Za-z\.\-\_\+\$\*\%\@\#\!]+$/.test(employeeNickName)){
-                    if(employeeNickName.length>9){
-                      userSort[i].employeeNickName = userSort[i].employeeNickName.substring(0,9)+"..."; 
+                    if(employeeNickName.length>8){
+                      userSort[i].employeeNickName = userSort[i].employeeNickName.substring(0,8)+"..."; 
                     }
                   }else{
                     if(employeeNickName.length>5){
@@ -134,5 +134,18 @@ Page({
     }
     drawStep();
     Timer=setInterval(drawStep,20);    
+  },
+  onShareAppMessage: function(){
+    return {
+      title: "运动大比拼",
+      desc: "",
+      path: location.href,
+      success: function(){
+        console.log("分享成功!");
+      },
+      fail: function(){
+        console.log("分享失败!");
+      }
+    }
   }
 });
