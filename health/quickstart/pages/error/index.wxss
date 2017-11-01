@@ -1,0 +1,2 @@
+view.wrap{ text-align:center; padding:60px;}
+view.wrap image,view.wrap text{ display:block; padding-top:20px; color:#333;}

@@ -32,7 +32,7 @@ page{ background-color:#efefef; color:#535965;}
 .details view.jobNumber{ color:#7d8799;font-size:.8rem;}
 .details .golas{ display:block; color:#8d96a8; font-size:.9rem; padding-top:4px;}
 .details view.step{ text-align:right; float:right; width:28%;}
-.details view.step view{ float:none; text-align:right; color:#2b8ff2;}
+.details view.step view{ float:none; text-align:right; color:#2b8ff2; font-family:microsoft yahei,'HelveticaNeue',sans-serif;}
 .details image.cup{ width:26px; height:30px; float:left; display:inline; vertical-align:top; margin:8px 6px 0 0;}
 .details view.cup{ width:26px; height:30px; float:left; display:inline-block; vertical-align:top; margin:8px 6px 0 0; text-aligh:center; line-height:30px;}
 .details image.avatarUrl{ width:48px; height:48px; float:left; display:inline; vertical-align:middle; border-radius:12px; margin-right:6px;}

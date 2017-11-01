@@ -5,13 +5,14 @@
     "pages/rank/index",
     "pages/detail/index",
     "pages/desc/index",
-    "pages/weekRank/index"
+    "pages/weekRank/index",
+    "pages/error/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTextStyle":"#333",
-    "navigationBarTitleText": "运动大比拼",
+    "navigationBarTitleText": "运动大挑战",
     "enablePullDownRefresh": false
   }
 }

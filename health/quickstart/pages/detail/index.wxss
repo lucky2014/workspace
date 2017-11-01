@@ -4,6 +4,6 @@
 .details{ clear:both; border-bottom:1px solid #e6e6e6; padding: 6px 20px; overflow:hidden; background:#fff;}
 .details .flex-item{ width:50%; float:left; display:inline;}
 .details .golas{ display:block; color:#8d96a8; font-size:.9rem; padding-top:4px;}
-.details .step{ text-align:right; font-size:1.3rem; color:#2e3033; padding-top:9px;}
+.details .step{ text-align:right; font-size:1.3rem; color:#2e3033; padding-top:9px; font-family:microsoft yahei,'HelveticaNeue',sans-serif;}
 
 .details .date{ color:#2e3033;}

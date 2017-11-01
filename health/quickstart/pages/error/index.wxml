@@ -1,0 +1,4 @@
+<view class="wrap">
+	<image src="../imgs/w3x.png" style="width:100px; height: 100px; margin:0 auto;" />
+	<text>您的微信版本过低，请更新到最近版本再试试！</text>
+</view>

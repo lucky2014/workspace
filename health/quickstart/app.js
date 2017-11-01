@@ -5,6 +5,16 @@ App({
     // 获取用户信息
     wx.getSetting({
       success: res => {
+        //console.log(JSON.stringify(res,null,2));
+        /*
+        {
+          "errMsg": "getSetting:ok",
+          "authSetting": {
+            "scope.werun": true,
+            "scope.userInfo": true
+          }
+        }
+        */
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
@@ -19,26 +29,17 @@ App({
               }
             }
           });
-          wx.authorize({
-            scope: 'scope.werun',
-            success() {
-                // 用户已经同意小程序使用计步功能
-                wx.getWeRunData();
-            }
-          });
-        }else{
-          wx.authorize({
-              scope: 'scope.werun',
-              success() {
-                  // 用户已经同意小程序使用计步功能
-                  wx.getWeRunData();
-              }
-          })
         }
       }
     })
   },
   globalData: {
     userInfo: null
+  },
+  networkTimeout: {
+    "request": 30000,
+    "connectSocket": 30000,
+    "uploadFile": 30000,
+    "downloadFile": 30000
   }
 })

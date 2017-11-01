@@ -10,7 +10,7 @@
   <view wx:if="{{item.image}}"><image src="{{item.image}}" class="cup" /></view>
   <view wx:else class="cup" style="text-align:center;">{{item.stepsRank}}</view>
 
-  <image src="{{item.employeeImageUrl}}" class="avatarUrl" />
+  <image wx:if="{{item.employeeImageUrl}}" src="{{item.employeeImageUrl}}" class="avatarUrl" />
   <text>工号 {{item.employeeNumber}}</text>
   <view class="jobNumber">({{item.employeeNickName}})</view>
   <view class="step"><view>{{item.stepsWeek}}</view>步</view>

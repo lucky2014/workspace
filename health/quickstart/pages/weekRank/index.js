@@ -7,8 +7,15 @@ Page({
   },
   onLoad: function() {
     var me = this;
+    me.getUserStepsWeekSortBefore();
+  },
+  getUserStepsWeekSortBefore: function(){
+    var me = this;
+    wx.showLoading({
+      title: '加载中',
+    });
     wx.request({
-      url: 'https://wx.yinnima.com/liujia-health-server/health/getUserStepsWeekSortBefore.do',
+      url: 'https://wx.yinnima.com/liujia-health-server/health/getUserStepsWeekSortBefore.do?t='+new Date().getTime(),
       data: {
         openId: app.globalData.openId,
         sortKey: 1
@@ -55,8 +62,18 @@ Page({
               currentUserRankShow: "none"
             });
           }
+
+          wx.hideLoading();
+          wx.pageScrollTo({
+            scrollTop: 0
+          });
         }
       }
     });
   },
+  onPullDownRefresh: function(){
+    var me = this;
+    me.getUserStepsWeekSortBefore();
+    wx.stopPullDownRefresh();
+  }
 });
