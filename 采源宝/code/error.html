@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=320,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+	
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+	body{
+		width: 100%;
+		height: 100%;
+		background-color: #F0F0F0;
+	}
+	section>div{
+		width: 80%;
+		position: absolute;
+		left: 10%;
+		top: 40%;
+		margin-top: -5rem;
+		text-align: center;
+	}
+	section>div>img{
+		width:160px;
+		height:160px;
+	}
+	section>div>p{
+		color: #A2A2A2;
+		margin-top: 1rem;
+		font-size: 18px;
+	}
+	</style>
+</head>
+<body>
+	<header></header>
+	<section>
+		<div>
+			<img src="imgs/systemError.png" class="systemError" alt="">
+			<p id="str"></p>
+		</div>
+	</section>
+	<script>
+		function getQueryString(name) { //获取URL的参数，isEit
+          var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+          var r = window.location.search.substr(1).match(reg);
+          if (r != null) {
+            //return unescape(r[2]);
+            return decodeURI(r[2]);
+          }
+          return null;
+        };
+		var str = decodeURIComponent(getQueryString("errorMessage"));
+		document.getElementById("str").innerHTML = str;
+	</script>
+</body>
+</html>

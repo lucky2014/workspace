@@ -1,0 +1,26 @@
+.logistics{}
+.logistics .orderInfo{ margin-bottom:10px; padding:15px; background:#fff; overflow:hidden; }
+.logistics .orderInfo dt{ float:left; width:70px; }
+.logistics .orderInfo dt img{ display:block; width:100%; }
+.logistics .orderInfo dd{ padding-left:80px; }
+.logistics .orderInfo dd h3{ font-size:16px; line-height:20px; font-weight:normal; color:#BEA474; }
+.logistics .orderInfo dd p{ margin-top:5px; font-size:14px; color:#A2A2A2; line-height:20px; }
+.logistics .orderInfo dd p span{ color:#4A90E2; }
+
+.logisticsList{ padding:15px; background:#fff; }
+.logisticsList ul{ margin-left:66px; }
+.logisticsList li{ position:relative; padding:0 0 20px 24px; border-left:1px solid #f0f0f0; }
+.logisticsList li:last-child{ border-left:none; }
+.logisticsList li h4{ margin-bottom:3px; font-size:14px; color:#A2A2A2; line-height:1em; font-weight:normal; }
+.logisticsList li>p{ font-size:14px; color:#A2A2A2; line-height:20px; }
+.logisticsList li>p span{ color:#4A90E2; }
+.logisticsList li .timeDiv{ position:absolute; left:-66px; top:-2px; width:46px; font-size:12px; text-align:right; color:#A2A2A2; line-height:16px; }
+.logisticsList li .timeDiv p{ margin-bottom:2px; font-size:12px; color:#A2A2A2; line-height:1em; }
+.logisticsList .circle{ position:absolute; left:-5px; top:0; width:9px; height:9px; background:#D8D8D8; border-radius:50%; }
+
+.logisticsList .current h4{ color:#BEA474; }
+.logisticsList .current>p{ color:#BEA474; }
+.logisticsList .current .circle{ background:#BEA474; }
+
+.logisticsList .status1 .timeDiv p,.logisticsList .status2 .timeDiv p{ font-size:16px; }
+.logisticsList .status2 .circle{ left:-9px; top:-1px; width:17px; height:17px; background:url(../../imgs/b/checkOn.png); background-size:100% 100%; }

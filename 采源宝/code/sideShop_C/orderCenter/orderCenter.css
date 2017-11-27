@@ -1,0 +1,14 @@
+#payment h1{position: relative; height: 50px;line-height: 50px;background: #fff;}
+#payment h1 p{font-size: 16px;margin-left: 16px;}
+#payment h1 span{position: absolute;top: 0;right: 91px; font-size: 12px;color: #a2a2a2;}
+#payment h1 span b{font-weight: normal;font-size: 12px;color: #a2a2a2;}
+#payment h1 i{position: absolute;right: 15px;top: 0;color: #aa2327;font-size: 18px;font-style: normal;}
+#payment h1 i em{color: #aa2327;font-size: 18px;font-style: normal;}
+
+#payment ul{background: #fff;}
+#payment ul li{overflow: hidden; border-top:  1px solid #F0F0F0;}
+#payment ul li>i{float: left; width: 20px;height: 20px;margin: 10px 15px;}
+#payment ul li.alipay>i{background: url(../../imgs/c/bk_payment.png) -7px -4px;}
+#payment ul li.weChat>i{background: url(../../imgs/c/bk_payment.png) -36px -5px;}
+#payment ul li>span{float: left; height: 40px;line-height: 40px;color: #a2a2a2;}
+#payment ul li b{float: right; display: inline-block; width: 22px;height: 22px;margin: 9px 10px;background: url(../../imgs/c/bk_payment.png) -57px -3px;}

@@ -1,0 +1,135 @@
+.orderManage{  }
+.orderTop{ position:fixed; top:0; left:0; right:0; padding-top:1px; background:#fff; z-index:9; box-shadow:0 -3px 9px 1px rgba(0,0,0,0.30); }
+.orderTop .searchDiv{ position:relative; height:30px; margin:7px 15px; }
+.orderTop .searchDiv input{ width:100%; height:100%; background:#f0f0f0; border-radius:4px; border:0; padding:0  4% 0 10%; }
+.orderTop .searchDiv>img{ position:absolute; top:7.5px; left:3.5%; width:15px; height:15px; }
+
+.orderNav{ position:relative; }
+.orderNav ul{ padding:6px 0;/*  border-top:1px solid #f0f0f0; */ overflow:hidden; }
+.orderNav li{ float:left; text-align:center; color:#606060; font-size:12px; line-height:18px; }
+.orderNav li span{ color:#606060; font-size:12px; }
+.orderNav li.current{ color:#BEA474; }
+.orderNav li.current span{ color:#BEA474; }
+.orderNav .moreStatus i{ display:inline-block; margin-top:-2px; width:18px; height:18px; vertical-align:middle; background:url(../../imgs/b/arrowIcon1.png); background-size:100% 100%; }
+.orderNav .moreStatus.current{ color:#606060; }
+.orderNav .moreStatus.current i{
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);		/* IE 9 */
+	-webkit-transform: rotate(180deg);	/* Safari and Chrome */
+	-o-transform: rotate(180deg);		/* Opera */
+	-moz-transform: rotate(180deg);		/* Firefox */
+}
+.buyerOrder{}
+.buyerOrder .orderTop li{ width:20%; }
+
+
+.sellerOrder{}
+.sellerOrder .orderTop li{ width:25%; }
+.orderNav .moreNav{ display:none; position:absolute; top:42px; right:4px; padding:0 12px; width:120px; z-index:9; border-radius:4px; background:#fff; box-shadow:0 0 9px rgba(0,0,0,0.30); }
+.orderNav .moreNav p{ padding:10px 0; text-align:center; color:#606060; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:18px; }
+.orderNav .moreNav p:last-child{ border-bottom:none; }
+.orderNav .moreNav p span{ color:#606060; font-size:12px; }
+.orderNav .moreNav p.current{ color:#BEA474; }
+.orderNav .moreNav p.current span{ color:#BEA474; }
+.orderNav .arrowIcon{ position:absolute; top:-18px;right:7px; width:18px; }
+
+.orderListDiv{}
+.orderList{}
+.orderList li{ margin-top:10px; background:#fff; }
+.orderList .statusDiv{ padding:10px 15px; height:40px; line-height:20px; font-size:13px; color:#A2A2A2; }
+.orderList .statusDiv span{ color:#A2A2A2; font-size:13px; }
+.orderList .statusDiv .statusSpan{ float:right; }
+
+.orderList .goodsDiv{ }
+.goodsList dl{ position:relative; padding:15px; width:100%; overflow:hidden; border-bottom:1px solid #f0f0f0; }
+.goodsList dt{ float:left; width:90px; height:90px; overflow:hidden; }
+.goodsList dt img{ display:block; width:100%; }
+.goodsList dd{ padding-left:100px; }
+.sellerOrder dd .titleDiv{ position:relative; }
+.sellerOrder dd .titleDiv p{
+	width:70%;
+	font-size:14px;
+	line-height:20px;
+	color:#1C1B20;
+	height:40px;
+	overflow:hidden;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+}
+.sellerOrder dd .titleDiv span{ position:absolute; right:0; }
+.sellerOrder dd .titleDiv .priceSpan{ top:0; font-size:14px; line-height:22px; color:#1C1B20; }
+.sellerOrder dd .titleDiv .numberSpan{ top:22px; font-size:12px; line-height:17px; color:#A2A2A2; }
+.goodsList dd .bottomDiv{ position:absolute; bottom:19px; left:115px; right:15px; height:16px; line-height:16px; }
+.sellerOrder dd .bottomDiv span{ font-size:12px; line-height:16px; color:#A2A2A2; }
+.sellerOrder dd .bottomDiv .specSpan{ display:block; width:70%; height:16px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.sellerOrder dd .bottomDiv .profitSpan{ position:absolute; top:0; right:0; color:#AA2327; }
+
+.buyerOrder dd .titleDiv p{ font-size:14px; line-height:20px; height:20px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.buyerOrder dd .titleDiv .specSpan{ font-size:12px; line-height:16px; height:32px; color:#A2A2A2; overflow:hidden; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; }
+.buyerOrder dd .bottomDiv .priceSpan{ font-size:14px; line-height:22px; color:#1C1B20; }
+.buyerOrder dd .bottomDiv .numberSpan{ float:right; font-size:12px; line-height:17px; color:#A2A2A2; }
+.goodsInfo dd .titleDiv p{ font-size:14px; line-height:20px; height:20px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.goodsInfo dd .titleDiv .specSpan{ font-size:12px; line-height:16px; height:32px; color:#A2A2A2; overflow:hidden; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; }
+.goodsInfo dd .bottomDiv .priceSpan{ font-size:14px; line-height:22px; color:#1C1B20; }
+.goodsInfo dd .bottomDiv .numberSpan{ float:right; font-size:12px; line-height:17px; color:#A2A2A2; }
+
+
+.orderList .priceDiv{ padding:10px 15px; border-bottom:1px solid #f0f0f0; text-align:right; line-height:20px; font-size:13px; color:#A2A2A2; }
+.orderList .priceDiv span{ color:#A2A2A2; font-size:13px; }
+.orderList .priceDiv .buyerPrice{ margin-top:-2px; font-size:16px; line-height:25px; color:#1C1B20; }
+
+.orderList .buttonDiv{ padding:10px 13px; overflow:hidden; }
+.orderList .buttonDiv a{ float:right; padding:0 10px; height:26px; line-height:24px; font-size:14px; border-radius:13px; }
+.orderList .buttonDiv .orderBtn1{ border:1px solid #BEA474; color:#BEA474; }
+.orderList .buttonDiv .orderBtn2{ border:1px solid #AA2327; color:#AA2327; }
+
+.updateBtn{ position:fixed; bottom:12px; left:0; right:0; }
+
+.orderDetail{}
+.orderDetail .orderStatus{ position:relative; }
+.orderDetail .orderStatus img{ display:block; width:100%; }
+.orderDetail .orderStatus div{ position:absolute; top:50%; left:30px; margin-top:-11px; }
+.orderDetail .orderStatus p{ font-size:16px; line-height:22px; color:#fff; }
+.orderDetail .orderStatus span{ font-size:12px; line-height:14px; color:#fff; }
+.orderDetail .orderStatus .timeSpan{ display:block; }
+
+.addressDiv{ position:relative; margin-top:10px; padding:15px 40px 15px 50px; background:#fff; }
+.addressDiv div span{ font-size:16px; color:#1C1B20; line-height:22px; }
+.addressDiv div .phoneSpan{ float:right; }
+.addressDiv p{ margin-top:5px; font-size:12px; color:#606060; line-height:17px; }
+.addressDiv .posIcon{ position:absolute; left:15px; top:50%; margin-top:-12px; width:21px; }
+.addressDiv .arrIcon{ position:absolute; right:15px; top:50%; margin-top:-11px; width:22px; }
+
+.buyerMessage{ padding:10px 15px; background:#fff; color:#A2A2A2; font-size:14px; line-height:20px; }
+.buyerMessage p{ color:#606060; }
+
+.goodsInfo{ margin:10px 0; }
+.goodsInfo .goodsList{}
+.goodsInfo .goodsList{ background:#fff; }
+.priceDiv{}
+.priceDiv div{ padding:10px 15px; background:#fff; }
+.priceDetail{ border-bottom:1px solid #f0f0f0; }
+.priceDetail p{ margin-bottom:3px; color:#A2A2A2; font-size:14px; line-height:20px; }
+.priceDetail p span{ float:right; color:#606060; }
+.priceTotal p{ color:#A2A2A2; }
+.priceTotal span{ float:right; color:#AA2327; }
+
+.remarkDiv{ display:none; margin-bottom:10px; padding:10px 15px; background:#fff; }
+.remarkDiv textarea{ display:none; padding:5px 10px; width:100%; height:32px; border:1px solid #f0f0f0; font-size:12px; line-height:16px; }
+.remarkInfo{ display:none; color:#A2A2A2; font-size:14px; line-height:20px; }
+.remarkInfo p{ color:#606060; }
+
+.orderInfo{ padding:12px; background:#fff; }
+.orderInfo p{ font-size:12px; color:#A2A2A2; line-height:17px; }
+.orderInfo span{ font-size:12px; color:#606060; }
+
+.payDiv{ display:none; position:fixed; bottom:0; left:0; right:0; padding:4px 4px 4px 15px; background:#fff; box-shadow:0 3px 9px 1px rgba(0,0,0,0.30); }
+.payDiv p{ display:inline-block; font-size:12px; color:#A2A2A2; line-height:40px; }
+.payDiv p span{ font-size:18px; color:#AA2327; line-height:40px; }
+.payDiv a{ float:right; width:130px; height:40px; line-height:40px; text-align:center; font-size:14px; background:#AA2327; color:#fff; }
+
+.noData{ display:none; position:absolute; left:0; top:0; width:100%; height:100%; padding:20px 0; background:#fff; }
+.noData img{ display:block; width:160px; margin:40% auto 15px; }
+.noData p{ font-size:14px; color:#A2A2A2; line-height:20px; text-align:center; }
+

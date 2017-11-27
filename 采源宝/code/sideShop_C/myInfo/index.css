@@ -1,0 +1,29 @@
+.myInfo{ background: #fff;}
+.myInfo header{ clear: both; padding: 16px 14px; overflow: hidden; background: url('../../imgs/c/bg.png');
+background-size: 100% 100%;}
+.myInfo header img{ width: 80px; height: 80px; border-radius: 100%; float: left;}
+.myInfo header dl{ padding-left: 96px; padding-top: 10px;}
+.myInfo header dt{ font-size: .92rem; line-height: 34px; color: #BEA474; height: 34px;}
+.myInfo header dd{ color: #BEA474;}
+
+.bread{ clear: both; border-bottom: 1px solid #f0f0f0; margin:0 0 10px 0; 
+padding: 13px 14px 9px; font-size: .92rem;}
+.bread a{ display:block; font-size: .8rem; color: #606060;}
+.bread .weui-cell__ft{ float: right; color: #a2a2a2;}
+
+.myOrderList{ clear: both; overflow: hidden; padding:0 0 12px;}
+.myOrderList li{ float: left; width: 25%; text-align: center; font-size: .75rem;}
+.myOrderList li a{ display: block; color: #A2A2A2;}
+.myOrderList li span{ display: block; color: #BEA474; font-size: .85rem; padding-bottom: 4px;}
+
+.weui-cells{ margin-top: 10px;}
+.weui-cells .weui-cell.weui-cell_access{ padding:13px 14px;}
+.weui-cells .weui-cell.weui-cell_access .weui-cell__hd img{ width: 30px; height: 30px;}
+.weui-cells .weui-cell.weui-cell_access .weui-cell__bd p{font-size: .8rem; color: #606060;}
+
+.editBox{ position: fixed; left: 0; bottom: 0; width: 100%; background: #fff;}
+.editBox .title{ text-align: center; position: relative; padding-top: 10px; font-size: .9rem;}
+.editBox .title a.cut{ position: absolute; right: 14px; width: 33px; top: 4px;}
+.editBox .title a.cut img{ width: 100%;}
+
+.weui-cells:before{ border: none;}

@@ -1,0 +1,67 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=320,initial-scale=1.0,maximum-scale=1.3,user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>商品分享</title>
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../sideShop_C/share/index.css">
+		<script src="http://g.alicdn.com/m1688/lib-hybridapi/0.1.15/es6-promise.min.js"></script>
+		<script src="http://g.alicdn.com/m1688/lib-hybridapi/0.1.15/pan.min.js"></script>
+	</head> 
+	<body>
+		<div id="title" class="wrapper">
+			<h3>分享文字</h3>
+			<textarea placeholder="请输入分享文字">
+				
+			</textarea>
+		</div>
+		<div id="content" class="wrapper">
+			<ul class="clearFix">
+				<li>
+					<img src="../imgs/b/img1.jpg">
+				</li>
+				<li>
+					<img src="../imgs/b/shopBg2.png">
+				</li>
+				<li>
+					<img src="../imgs/b/img1.jpg">
+				</li>
+				<li>
+					<img src="../imgs/b/shopBg3.png">
+				</li>
+				<li>
+					<img src="../imgs/b/img1.jpg">
+				</li>
+				<li>
+					<img src="../imgs/b/shopBg3.png">
+				</li>
+			</ul>
+		</div>
+		<div id="bottom" class="wrapper">
+			<p>
+				文本输入框可以进行文字编辑；<br/>
+				图片列表只能进行选择，不能进行上传或删除操作
+			</p>
+		</div>
+		<div id="dialog">
+
+        </div>
+        <section class="navBar">
+        </section>
+		<script type="text/javascript" src="../lib/sea.js"></script>
+		<script type="text/javascript" src="../lib/seajs-text/seajs-text-1.1.1/seajs-text.js"></script>
+		<script type="text/javascript" src="../config.js"></script>
+		<script>
+		    seajs.use("sea_css", function(){
+		        seajs.use("./share/index");
+		    });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+
+/* 店铺管理 */
+.shopManage li{ padding-left:15px; background:#fff; }
+.shopManage li a{ position:relative; display:block; padding:14px 32px 14px 0; border-bottom:1px solid #F0F0F0; font-size:14px; color:#606060; line-height:20px; }
+.shopManage .bottomLi a{ margin-bottom:10px; border:none; }
+.shopManage .shopHead a{ padding:20px 32px 20px 0; }
+.shopManage .shopHead b{ position:absolute; right:32px; top:50%; margin-top:-20px; width:40px; height:40px; border-radius:50%; }
+.shopManage li a p{ float:right; margin-top:2px; color:#A2A2A2; font-size:12px; line-height:17px; }
+.shopManage .inputLi a input{ width:170px; border:none; text-align:right; color:#A2A2A2; }
+.shopManage li a span{ padding-left:6px; color:#A2A2A2; font-size:12px; line-height:17px; }
+.shopManage li i{ position:absolute; right:10px; top:50%; margin-top:-11px; width:22px; height:22px; background:url(../../imgs/b/arrowIcon.png); background-size:100% 100%; }
+.uploadLi{}
+.uploadLi input{ position:absolute; right:0; top:0; height:48px; width:100%; opacity:0; z-index:2 }
+
+
+/* 店铺修改 */
+.shopSummary{ padding:15px; background:#fff; }
+.shopSummary textarea{ width:100%; height:80px; padding:10px; font-size:14px; line-height:20px; color:#606060; border:1px solid #f0f0f0; }
+.shopSummary div{ position:relative; }
+.shopSummary a{ position:absolute; bottom:10px; right:10px; color:#A2A2A2; font-size:12px; }
+.shopSummary a span{ font-size:12px; color:#A2A2A2; }
+.shopSummary p{ color:#A2A2A2; font-size:12px; }
+.editSummary,.editBackground,.infoAuthentication{ position:fixed; bottom:15px; left:0; right:0; }
+
+.shopBg{ background:#fff; }
+.shopBg img{ display:block; width:100%; }
+.shopBg ul{ padding:15px 10px; overflow:hidden; }
+.shopBg li{ float:left; width:30%; margin:0 1.5%; text-align:center; }
+.shopBg li p{ padding-top:5px; font-size:12px; color:#A2A2A2; line-height:16px; }
+.shopBg li p i{ display:inline-block; margin:-3px 5px 0 0; width:16px; height:16px; border-radius:50%; vertical-align:middle; background:url(../../imgs/b/checkNo.png); background-size:100% 100%; }
+.shopBg .current p i{ background:url(../../imgs/b/checkOn.png); background-size:100% 100%; }
+
+.infoCertifi{ display:none; }
+.infoCertifi li{ background:#fff; border-bottom:1px solid #f0f0f0; }
+.infoCertifi li.title label{ font-size:16px; color:#606060; }
+.editPassword li:last-child{ border-bottom:none; }
+.infoCertifi li a{ position:relative; display:block; padding:14px 10px 14px 15px; font-size:14px; color:#606060; line-height:20px; }
+.infoCertifi li a label{ display:inline-block; width:80px; font-size:14px; color:#A2A2A2; }
+.infoCertifi li a p{ display:inline-block; color:#636363; font-size:12px; line-height:17px; }
+.infoCertifi li i{ position:absolute; right:10px; top:50%; margin-top:-11px; width:22px; height:22px; background:url(../../imgs/b/arrowIcon.png); background-size:100% 100%; }
+.infoCertifi li input{ width:70%; border:none; color:#A2A2A2; }
+.infoCertifi .btn{ position:fixed; bottom:15px; left:0; right:0; }

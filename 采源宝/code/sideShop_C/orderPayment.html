@@ -1,0 +1,55 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=320,initial-scale=1.0,maximum-scale=1.3,user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>商品付款</title>
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/weui.min.css">
+		<link rel="stylesheet" href="../css/jquery-weui.min.css">
+		<link rel="stylesheet" href="../sideShop_C/orderPayment/orderPayment.css">
+	</head> 
+	<body>
+		<div id="payment">
+			<h1>
+				<p>支付金额</p>
+				<span>共（<b></b>）件：</span>
+				<i>¥<em></em></i>
+			</h1>
+			<ul>
+				<li class="alipay">
+					<i></i>
+					<span>支付宝支付</span>
+					<b></b>
+				</li>
+				<li class="weChat">
+					<i></i>
+					<span>微信支付</span>
+					<b></b>
+				</li>
+			</ul>
+			<div class="payOut">
+				<div class="payInfor">
+					<div class="qrcode"></div>
+					<p></p>
+				</div>
+			</div>
+			<p class="exitPayment"><a href="myInfo.html">退出</a></p>
+		</div>
+
+		<script type="text/javascript" src="../lib/sea.js"></script>
+		<script type="text/javascript" src="../lib/seajs-text/seajs-text-1.1.1/seajs-text.js"></script>
+		<script type="text/javascript" src="../config.js"></script>
+		<script>
+		    seajs.use("sea_css", function(){
+		        seajs.use("./orderPayment/orderPayment");
+		    });
+		</script>
+	</body>
+</html>

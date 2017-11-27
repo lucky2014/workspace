@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=320,initial-scale=1.0,maximum-scale=1.3,user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>店铺管理</title>
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/weui.min.css">
+		<link rel="stylesheet" href="../css/jquery-weui.min.css">
+	</head> 
+	<body>
+		<div class="shopManage hide">
+			<ul>
+				<li class="shopHead bottomLi"><a>店铺头像<b><img id="shopHead" src="http://122.224.214.231:8001/group1/M00/00/97/wKgCRFoRdEiAQuMCAAA3Bp-vdFE687.png" width="100%" /></b></a></li>
+				<li class="inputLi"><a>店铺名称<p><input type="text" value="" id="shopName" maxLength="15" /></p><i></i></a></li>
+				<li class="linkLi" type="shopSummary"><a>店铺简介<p id="shopSummary">未设置</p><i></i></a></li>
+				<li class="linkLi" type="shopBackground"><a>店招背景<p id="shopBg" imgType="1">默认一</p><i></i></a></li>
+				<li class="bottomLi linkLi" type="InfoAuthentication"><a>信息认证<span>（未认证，部分功能将受限）</span><p id="InfoAuther">未认证</p><i></i></a></li>
+				<li class="inputLi"><a>店主手机号<p><input id="sellerPhone" type="number" pattern="[0-9]*" placeholder="未设置" /></p><i></i></a></li>
+				<li class="inputLi"><a>客服手机号<p><input id="servicePhone" type="number" pattern="[0-9]*" placeholder="未设置" /></p><i></i></a></li>
+				<li class="uploadLi"><a>支付宝收款二维码<p><input id="zfbInput" name="aliFile" type="file" /><span id="alipaySet"></span></p><i></i></a></li>
+				<li class="bottomLi uploadLi"><a>微信收款二维码<p><input id="wxInput" name="wxFile" type="file" /><span id="wechatSet"></span></p><i></i></a></li>
+				<li class="bottomLi inputLi"><a>统一商品涨幅<p><input id="goodsRose" type="number" value="10" />%</p><i></i></a></li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="../lib/sea.js"></script>
+		<script type="text/javascript" src="../lib/seajs-text/seajs-text-1.1.1/seajs-text.js"></script>
+		<script type="text/javascript" src="../config.js"></script>
+		<script>
+		    seajs.use("sea_css", function(){
+		        seajs.use("./shopManage/index");
+		    });
+		</script>
+	</body>
+</html>

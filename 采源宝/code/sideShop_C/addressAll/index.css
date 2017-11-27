@@ -1,0 +1,51 @@
+.fr{ float: right;}.adMore{ float: left; position: absolute; left: 76px; top: 10px; right: 76px;}
+
+.weui-media-box_appmsg .weui-media-box__hd{ line-height: 30px; height: 48px; text-align: left;}
+.weui-media-box_appmsg .weui-media-box__hd i{ display: inline-block; color: red; border:1px solid red; 
+font-style: normal; padding: 0 4px; line-height: 20px; border-radius: 3px;}
+.weui-media-box_appmsg .weui-media-box__hd img.edit{ width: 24px; height: 24px; 
+float: right;}
+
+.weui-media-box.weui-media-box_appmsg{ background: #fff;}
+dt.weui-media-box.weui-media-box_appmsg{ margin-bottom: 10px;}
+
+.weui-cells.weui-cells_form{ margin-top: 0;}
+.weui-cells.weui-cells_form .weui-cell{ border-top: 1px solid #d9d9d9;}
+.weui-cells.weui-cells_form .weui-cell:before{ border-top: none;}
+.weui-cells.weui-cells_form .weui-cell__bd:after{content: " ";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: relative;
+    top: -2px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -4px;}
+.weui-cells.weui-cells_form .weui-cell__bd.weui_text:after{ height: 0;
+    width: 0; border-width: 0;}
+
+.bg-danger, .bg-error{ background:#fff; color: red;}
+
+.buttons_bottom{ clear: both; width: 100%; background: #fff; border-top: 1px solid #ccc;}
+.buttons_bottom a{ width: 50%; float: left; text-align:center; position: relative; 
+line-height: 50px; font-size: .9rem; background: #fff; color: #BEA474;}
+.buttons_bottom a i{ display: block; position: absolute; right: 0; width: 1px; height: 50px; background: #ccc;}
+.buttons_bottom a.active{ background: #BEA474; color: #fff;}
+.buttons_bottom a.buttons_buttom_add{ display: block; width: 100%;}
+.buttons_bottom a.buttons_buttom_add em{ font-size: 1.2rem; color: #BEA474; font-style: normal;
+padding-right: 4px; font-weight: bold;}
+
+.weui-textarea-counter{ position: relative;}
+.weui-cell-warn{ position: absolute; left: 0; top: 0; display: none; color: red;}
+
+#count{ color: red;}
+.weui-media-box.weui-media-box_appmsg{ padding: 10px 12px 8px;}
+.addressAll .weui-media-box__title{ text-align: left;}
+
+.weui-media-box_appmsg{ display: block; overflow: hidden; display: block; display: block}

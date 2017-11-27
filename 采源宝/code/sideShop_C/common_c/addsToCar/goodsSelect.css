@@ -1,0 +1,33 @@
+.addShopping{display: none; position: fixed;width: 100%;height: 100%;top: 0;left: 0; cursor: pointer;background: rgba(0,0,0,0.50);z-index: 999;}
+.addInner{display: none;}
+.addInner{position: fixed;left: 0;bottom: 0;width: 100%; background: #fff;z-index: 999;}
+.addInner .addHeader{position: relative; height: 70px;}
+.addInner .addHeader>img{position: absolute;left: 13px;top: -35px; width: 90px;height: 90px;border: 1px solid #BEA474;}
+.addInner .addHeader ul{margin-left: 117px;padding-top: 8px;}
+.addInner .addHeader ul li.price{font-size: 20px;color: #AA2327;}
+.addInner .addHeader ul li.price em{font-size: 20px;color: #AA2327;font-style: normal;}
+.addInner .addHeader ul li.stock,.addInner .addHeader ul li.stock span{font-size: 12px;color: #a2a2a2;}
+.addInner .addHeader i{position: absolute;right: 0px;top: 0px; display: inline-block;width: 40px;height: 40px; }
+.addInner .addHeader i img{width: 20px;height: 20px;margin:10px 5px;}
+.addInner .addSelect{max-height: 230px;overflow-y:scroll;}
+.addInner .addSelect .commonSelect{border-top: 1px solid #F0F0F0;min-height: 90px;}
+.addInner .addSelect .commonSelect h2{margin: 10px 15px;font-weight: normal;}
+.addInner .addSelect .commonSelect ul{overflow: hidden;margin: 0 7px 2px 7px;}
+.addInner .addSelect .commonSelect ul li{float: left; height: 28px;line-height: 26px;margin:0 0 8px 8px;color: #a2a2a2; background: #fff;border: 1px solid #979797;border-radius: 20px;text-align: center;padding: 0 10px;}
+.addInner .addSelect .commonSelect ul li.b{border: 1px dotted #ccc;color: #ddd;}
+.addInner .addSelect .commonSelect ul li.selected{background: #BEA474;color: #fff;border: none;}
+.addInner .numSelect{height: 40px; border-top: 1px solid #F0F0F0;border-bottom: 1px solid #F0F0F0;}
+.addInner .numSelect span{display: inline-block;line-height: 40px;margin-left: 15px;}
+.addInner .numSelect ul{float: right; display: inline-block;overflow: hidden;margin: 6.5px 15px;}
+.addInner .numSelect ul li{float: left; display: inline-block;width: 25px;height: 25px;line-height: 25px; background: #f0f0f0;margin-right: 2px;text-align: center;}
+.addInner .numSelect ul li.addNum,.addInner .numSelect ul li.reduceNum{color: #a2a2a2;width: 45px;font-family: monospace;}
+.addInner .numSelect ul li.nowNum input{background: #f0f0f0;outline: none;border: none;width: 100%;height: 100%; text-align: center;}
+.addInner p.addCarButton{color: #fff;font-size: 16px;width: 92%;background: #1C1B20;height: 50px;line-height: 50px;text-align: center;margin: 9px auto 11px; }
+.addInner p.addCarButton.cantBuy{background: #a2a2a2 !important;color: #fff;}
+
+.weui-toast{padding: 0 5px;}
+/* .weui-toast{width: 88px;height: 88px;min-height:88px;}  */
+.weui-toast--forbidden .weui-icon_toast{font-size: 30px;margin-top: 25px;}
+.weui-toast_content{font-size: 12px;}
+.weui-dialog, .weui-toast{top: auto;bottom: 200px;}
+.weui-icon-success-no-circle{margin-top: 10px;}

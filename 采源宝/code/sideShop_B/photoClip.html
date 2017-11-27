@@ -1,0 +1,112 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=320,initial-scale=1.0,maximum-scale=1.3,user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>PhotoClip</title>
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/weui.min.css">
+		<link rel="stylesheet" href="../css/jquery-weui.min.css">
+
+		<style>
+		.upLoad {
+		  /* margin-top: 20px; */
+		  background-color: #f5f7fa;
+		  padding: 20px 0;
+		}
+
+		.upLoad .upInput {
+		  width: 200px;
+		  height: 130px;
+		  margin: 0 auto;
+		  background: url(../imgs/upLoad.png) no-repeat;
+		  background-size: 100% 100%;
+		  position: relative;
+		}
+
+		.upLoad p {
+		  text-align: center;
+		  width: 75%;
+		  color: #617084;
+		  margin: 16px auto 0;
+		}
+		/*裁切图片*/
+
+		#clipBox {
+		  position: fixed;
+		  left: 0;
+		  top: 0;
+		  background: rgba(0, 0, 0, .7);
+		  width: 100%;
+		  z-index: 101;
+		  display: none;
+		  height: 100%;
+		  overflow: hidden;
+		}
+
+		#clipBox #clipArea {
+		  height: 270px;
+		}
+
+		#clipBox #clipBtn {
+		  width: 100px;
+		  margin: 4px auto;
+		  background: #ffb500;
+		  font-size: 1em;
+		  line-height: 32px;
+		  text-align: center;
+		  border-radius: 20px;
+		  color: #fff;
+		  border: none;
+		  display: inherit;
+		}
+		.upLoad .error {
+		  color: red;
+		  display: block;
+		  text-align: center;
+		  padding-top: 8px;
+		}
+		.errorMsg{ padding: 14px; color: #ffa200;}
+
+		
+		</style>
+	</head> 
+	<body>
+		<div class="upLoad">
+			<div class="upInput">
+				<img src="" class="image" width="100%" />
+				<input type="file" accept="image/*" multiple="" class="updateFile weui-uploader__input" name="imageFile" id="imageFile" required /> 
+			</div>
+		    <p>点击上传照片，要求亲子合照<br />像素280*186</p>
+		</div>	
+
+		<!--裁切图片-->
+		<div id="clipBox">
+			<div id="clipArea"></div>
+			<button id="clipBtn">截取</button>
+		</div>
+		<!--防止网络慢时，有个截图中...作为提示-->
+		<div class="inShade" id="inShade">
+			<div class="weui-loadmore">
+		        <i class="weui-loading"></i>
+		        <span class="weui-loadmore__tips">截图中...</span>
+		    </div>
+		</div>
+
+
+		<script type="text/javascript" src="../lib/sea.js"></script>
+		<script type="text/javascript" src="../lib/seajs-text/seajs-text-1.1.1/seajs-text.js"></script>
+		<script type="text/javascript" src="../config.js"></script>
+		<script>
+		    seajs.use("sea_css", function(){
+		        seajs.use("./photoClip/index");
+		    });
+		</script>
+	</body>
+</html>

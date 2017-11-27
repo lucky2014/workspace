@@ -1,0 +1,99 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=320,initial-scale=1.0,maximum-scale=1.3,user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>订单中心</title>
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/shoppingList.css">
+		<link rel="stylesheet" href="../css/weui.min.css">
+		<link rel="stylesheet" href="../css/jquery-weui.min.css">
+	</head> 
+	<body>
+		<div id="productDetail">
+			<!-- <div class="detail-title">
+				<i class="warn">i</i>
+				下单后请于8小时内付款，逾期订单将自动关闭
+			</div> -->
+			<div class="detail-address getValueByAttr" data-param="receiverId:32">
+				<a>
+					<div class="address-left">
+						<img src="../imgs/c/pos.png" alt=""/>
+					</div>
+					<div class="address-center">
+						<h3>
+							<span class="lf canGetValue receiverName" data-param = "receiverName"></span>
+							<span class="rt canGetValue receiver_moible" data-param = "receiver_moible"></span>
+						</h3>
+						<p class="desc canGetValue receiverAddress" data-param="receiverAddress">
+							
+						</p>
+					</div>
+					<div class="address-right">
+						<img src="../imgs/c/arrowIcon.png" alt=""/>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="container">
+			
+		</div>
+		<div class="priceList main detailList">
+			<div class="priceTotal">
+				<span class="desc lf">
+					商品总金额
+				</span>
+				<span class="rt fee">0.00</span>
+			</div>
+			<div class="pricePost">
+					<span class="desc lf">
+						合计邮费
+					</span>
+				<span class="rt fee">0.00</span>
+			</div>
+			<!-- <div class="prefer">
+				<span class="desc lf">
+					商品优惠（每笔订单立减）
+				</span>
+				<span class="rt reduceFee">8.00</span>
+			</div> -->
+			<div class="needPay">
+				<span class="desc lf">
+					应付金额
+				</span>
+				<span class="fee rt">0.00</span>
+			</div>
+		</div>
+		<div class="detail-bottom">
+			<div class="detail-bottom-left">
+					<span class="chooseAll shoose-span">
+						合计:
+					</span>
+			</div>
+			<div class="detail-bottom-center">
+				<span class="feeTotal">0.00</span>
+				<span class="desc">(不含运费等)</span>
+			</div>
+			<div class="detail-bottom-right">
+				<input type="button" class="btn" id="submitOrder" value="提交订单" name="">
+			</div>
+		</div>
+		<div id="dialog">
+
+        </div>
+		<script type="text/javascript" src="../lib/sea.js"></script>
+		<script type="text/javascript" src="../lib/seajs-text/seajs-text-1.1.1/seajs-text.js"></script>
+		<script type="text/javascript" src="../config.js"></script>
+		<script>
+		    seajs.use("sea_css", function(){
+		        seajs.use("./orderCenter/orderCenter");
+		    });
+		</script>
+	</body>
+</html>

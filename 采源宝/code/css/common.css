@@ -1,0 +1,50 @@
+*{ margin: 0; padding: 0; list-style: none; color: #1c1b20; font-size: 14px;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;font-family:microsoft yahei,'HelveticaNeue',sans-serif;}
+body{ background: #F0F0F0;min-width: 320px;}
+input,button,select,textarea{  
+    outline:none;
+    -webkit-appearance:none;
+}
+.clearFix:before,.clearFix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+textarea{ resize:none; }
+a{ text-decoration: none;}
+.hide{ display: none;}
+.margin14{ margin: 14px auto;}
+.f999{ color: #999;}
+.tc{ text-align: center;}
+.btn{ display:block; margin:0 15px; height:3em; font-size:16px; color:#fff; line-height:3em; text-align:center; background:#BEA474; }
+.ml10{ margin-left:10px; }
+.mb10{ margin-bottom:10px; }
+
+/*引导遮罩*/
+.mask{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,.6); text-align: right; z-index: 100;
+display: none;}
+.mask img{ display: block; width: 80%; margin: 0 0 0 15%;}
+.markTip{position: fixed; top: 36%; text-align: center; width: 100%;}
+.markTip span{ background: rgba(0,0,0,.6); display: inline-block; padding: 5px 12px 7px; border-radius: 6px; color: #fff;}
+
+
+
+/*背景透明度*/
+.inShade{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    z-index: 999;
+    background-color: rgba(0,0,0,.8);
+    display: none; color: #fff;
+}
+.inShade img{
+    width: 55%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+input[disabled]{
+    background-color: #A2A2A2;
+}

@@ -1,0 +1,66 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=320,initial-scale=1.0,maximum-scale=1.3,user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>订单详情</title>
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/weui.min.css">
+		<link rel="stylesheet" href="../css/jquery-weui.min.css">
+	</head> 
+	<body>
+		<div class="orderDetail hide">
+			<div class="statusDiv"></div>
+			<div class="addressDiv"><a>
+				<div><span class="nameSpan"></span><span class="phoneSpan"></span></div>
+				<p class="addressSpan"></p>
+				<i class="posIcon"><img src="../imgs/b/posIcon.png" width="100%" /></i>
+			</a></div>
+			<div class="buyerMessage">买家留言：<p></p></div>
+			<div class="goodsInfo">
+				<div class="goodsList">
+					
+				</div>
+				<div class="priceDiv">
+					<div class="priceDetail">
+						<p>商品总金额<span id="goodsPrice"></span></p>
+						<p>运费<span id="transferFee"></span></p>
+						<p class="seller_p">买家实付<span id="buyerPrice"></span></p>
+						<!-- <p>优惠券<span id="">-¥8.00</span></p> -->
+						<p class="seller_p">赚取差价<span id="earnPrice"></span></p>
+					</div>
+					<div class="priceTotal">
+						<p>应付金额<span id="totalPrice"></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="remarkDiv">
+				<textarea class="remarkInput" placeholder="请输入订单备注（最多100个字）..." maxLength="100"></textarea>
+				<div class="remarkInfo">订单备注：<p></p></div>
+			</div>
+			<div class="orderInfo">
+				<p>订单编号：<span id="orderNo"></span></p>
+				<p>下单时间：<span id="createTime"></span></p>
+				<p>付款时间：<span id="payTime"></span></p>
+			</div>
+			<div class="payDiv">
+				<p>合计：<span id="sellerPrice"></span>（含运费）</p>
+				<a id="goToPay">同步订单至采源宝</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="../lib/sea.js"></script>
+		<script type="text/javascript" src="../lib/seajs-text/seajs-text-1.1.1/seajs-text.js"></script>
+		<script type="text/javascript" src="../config.js"></script>
+		<script>
+		    seajs.use("sea_css", function(){
+		        seajs.use("./orderManage/orderDetail");
+		    });
+		</script>
+	</body>
+</html>

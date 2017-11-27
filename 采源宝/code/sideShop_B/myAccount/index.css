@@ -1,0 +1,16 @@
+
+
+.myAccount li{ margin-top:10px; background:#fff; }
+.myAccount li a{ position:relative; display:block; padding:14px 10px 14px 15px; font-size:14px; color:#606060; line-height:20px; }
+.myAccount li a p{ float:right; margin-top:2px; color:#A2A2A2; font-size:12px; line-height:17px; }
+.myAccount li i{ position:absolute; right:10px; top:50%; margin-top:-11px; width:22px; height:22px; background:url(../../imgs/b/arrowIcon.png); background-size:100% 100%; }
+.myAccount .quitBtn,.editPassword .editBtn{ position:fixed; bottom:15px; left:0; right:0; }
+
+.editPassword ul{ margin-top:10px; }
+.editPassword li{ background:#fff; }
+.editPassword li a{ position:relative; display:block; padding:14px 10px 14px 15px; font-size:14px; border-bottom:1px solid #F0F0F0; color:#606060; line-height:20px; }
+.editPassword li:last-child a{ border-bottom:none; }
+.editPassword li label{ display:inline-block; width:80px; font-size:14px; }
+.editPassword li input{ width:70%; border:none; color:#A2A2A2; }
+
+
