@@ -1,0 +1,32 @@
+*{ margin: 0; padding:0; list-style: none; font-family:sans-serif; font-size: .98em;}
+body,html{ max-width: 740px; margin: 0 auto;  background: url(../imgs/bg.jpg) 0 0; background-size:100% 100%;}
+.hide{ display: none;}
+img{ display: block; vertical-align: bottom;}
+
+.swiper-container {
+    width: 100%; left: 0; top: 0;
+    height: 100%; position: fixed; overflow: hidden; z-index: 1;
+}
+.swiper-wrapper{ position: absolute; left: 0; top: 0; width: 100000px;}
+.swiper-slide {
+    float: left;  position: relative; 
+}
+/* 前面*/
+#frontSwiper .swiper-slide img{ width: 70%; margin: 38% 15% 0;}
+#frontSwiper .swiper-button-prev,#frontSwiper .swiper-button-next{    position: absolute;
+    top: 47%;
+    width: 8%;}
+#frontSwiper .swiper-button-prev img,#frontSwiper .swiper-button-next img{ width: 100%;}
+#frontSwiper .swiper-button-prev{ left: 3%;}
+#frontSwiper .swiper-button-next{ right: 3%;}
+
+/*背后的*/
+#backSwiper .swiper-slide img{ width: 100%; margin: 200px 0 0;}
+.mask{position: absolute;
+    left: 0;
+    top: 0;}
+
+@media screen and (max-width: 330px) {
+	#frontSwiper .swiper-slide img{ margin: 46% 15% 0;}
+	#frontSwiper .swiper-button-prev,#frontSwiper .swiper-button-next{ top: 54%;}
+}

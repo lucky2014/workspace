@@ -1,0 +1,39 @@
+/**index.wxss**/
+page{
+	background-color:#fff;
+}
+.chooseLi{
+	display:block;
+	width:95%;
+	height:22px;
+	position:relative;
+	margin-left:5%;
+	padding:10px 0; 
+	border-bottom:1px solid #dee0e2;
+}
+.chooseLi .neImg{
+	width:22px;
+	height:22px;
+	float:left;
+	vertical-align: middle;
+}
+.chooseLi .example{
+	float:left;
+	line-height:22px;
+	padding-left:20px;
+	color:#43474d;
+	font-size:15px;
+	color:#1b2027;
+}
+.chooseLi .choose{
+	width:17px;
+	height:13px;
+	position:absolute;
+	right:10%;
+}
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}

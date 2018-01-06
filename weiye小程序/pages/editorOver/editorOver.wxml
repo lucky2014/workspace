@@ -1,0 +1,29 @@
+<view>
+	<view class="inputView">
+	  <view>
+	  	文章标题:
+	  </view>
+	  <input placeholder="限20个字内"  auto-focus="true"  maxlength="20" bindblur="blurFn" value="{{artTitle}}"></input>
+	</view>
+	<view class="inputView" bindtap="choseClass">
+	  <view>
+	  	文章分类
+	  </view>
+	  <image src="../../imgs/arrow.png"></image>
+	  <view class="classifg">
+	  	{{class}}
+	  </view>
+	</view>
+	<view class="inputView">
+	  <view>
+	  	允许评论
+	  </view>
+	   <switch bindchange="switch1Change" checked="{{artComment==1?true:false}}"/>
+	</view>
+	<text class="fm">选择封面</text>
+	<view class="fmBox">
+		<image src="{{artCover}}" bindtap="chooseImg" mode="widthFix"></image>
+		<view>点击更换</view>
+	</view>
+	<button type="" class="finish" bindtap="overFn">完成</button>
+</view>

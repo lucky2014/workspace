@@ -1,0 +1,10 @@
+<import src="../../dist/weCropper.wxml"/>
+
+<view class="cropper-wrapper">
+    <template is="weCropper" data="{{...cropperOpt}}"/>
+    <view class="cropper-buttons">
+        <button class="getCropperImage" bindtap="getCropperImage">
+            生成封面
+        </button>
+    </view>
+</view>

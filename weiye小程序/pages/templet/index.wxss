@@ -1,0 +1,63 @@
+@import "../../component/hSwiper/hSwiper.wxss";
+
+
+/*滚动图*/
+page{
+	background-color:#000;
+}
+#mainContainer{
+	height: 100%;
+	width: 100%;
+}
+
+.itemSelf{
+	height: 100%;
+	box-sizing:border-box;
+	margin:10rpx auto;
+	overflow: hidden;
+	height: 70%;
+	width: 90%;
+	color: white;
+}
+/**app.wxss**/
+div{
+  display:block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+page{
+  font-family: "Microsoft YaHei";  
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  position: relative;
+}
+button{
+	height:48px;
+	width:150px;
+	border-radius:26px;
+	font-size:20px;
+	position:fixed;
+	bottom:5%;
+	left:50%;
+	margin-left:-75px;
+	background-color:#FF5900;
+	color:#fff;
+}
+.item image{
+	width:100%;
+	height:100%;
+}
+.imgFont{
+	color:#fff;
+	width:100%;
+	text-align:center;
+	font-size:14px;
+	margin-top:20px;
+}
+
+

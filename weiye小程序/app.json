@@ -1,0 +1,25 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/templet/index",
+    "pages/list/list",
+    "pages/editor/editor",
+    "pages/editorPre/editorPre",
+    "pages/count/count",
+    "pages/from/from",
+    "pages/pilcrp/pilcrp",
+    "pages/cover/cover",
+    "pages/editorFont/editorFont",
+    "pages/webview/webview",
+    "pages/preview/preview",
+    "pages/editorOver/editorOver",
+    "pages/classify/classify",
+    "pages/cropper/index",
+    "pages/logs/logs",
+    "pages/start/start"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#2E2D34",
+    "navigationBarTextStyle": "white"
+  }
+}

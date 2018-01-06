@@ -1,0 +1,31 @@
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav"><view>表单</view></view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">投票</view> 
+</view>  
+  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+    <swiper-item>  
+    <scroll-view scroll-y bindscrolltolower="bottom" style="height:{{winHeight - 31}}px"> 
+      <view class="formContainer">
+      	<view class="viewHeader">
+      		<view>活动倒计时：{{date}}</view>
+      		<view class="stuat">{{stuat}}</view>
+      	</view>
+      	<view class="title">
+      		<view class="titletop">{{title}}</view>
+      		<view class="titlemd">信息</view>
+      		<view class="titleft"><view>{{joinPs}}参与</view><view>{{lookPs}}浏览</view></view>
+      	</view>
+      	<view class="container" wx:for="{{inforList}}">
+      		<view class="infoDate"><view class="conTitle">日期：</view>{{item.date}}</view><view class="infoTime"><view class="conTitle">时间：</view>{{item.time}}</view>
+      		<view wx:for="{{item.items}}">
+      			<view><view class="conTitle">{{item.title}}：</view>{{item.value}}</view>
+      		</view>
+      	</view>
+      </view>  
+    </scroll-view>
+    </swiper-item>  
+    <swiper-item>  
+      <view></view>  
+    </swiper-item>  
+</swiper>  

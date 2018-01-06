@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{arrow}}" class="chooseLi" bindtap="onChangeShowState" data-class="{{item.title}}" data-categoryid="{{item.categoryid}}">
+    <image src="{{item.image}}" class="neImg" background-size="cover"></image>
+    <view class="example">
+      <text class="neTitle">{{item.title}}</text>
+    </view>
+    <view class="hide{{item.showView?'show':''}}">
+      <image src="../../imgs/choose.png" class="choose"></image>
+    </view>
+  </view>
+</view>

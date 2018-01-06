@@ -1,0 +1,22 @@
+<view class="container">
+	<view class="propty">当前最多支持添加6个填写项</view>
+	<view class="inputCon">
+		<view  class="reinput">
+			<input placeholder="表单标题（限20个字内）" bindblur="blurTitle" auto-focus="true" maxlength="20" value="{{title}}"></input>
+		</view>
+		<view  wx:for="{{inputList}}" class="reinput">
+			<input placeholder="填写{{index==0?index+1+'(如名称)':index==1?index+1+'(如手机号)':index+1}}" maxlength="20" value="{{item.title}}" data-index="{{index}}" bindblur="blurFn"></input>
+			<image src="../../imgs/cha.png" class="cha {{inputList.length<3?'hide':'show'}}" bindtap="delectInput" data-index="{{index}}"></image>
+		</view>
+		<view class="addView {{inputList.length==6?'hide':'show'}}" bindtap="addInput"><image src="../../imgs/push2.png" class="addImg"></image>添加选项</view>
+	</view>
+	<view class="section">
+	  <picker mode="date" value="{{date}}" start="{{startdate}}" end="2099-12-31" bindchange="bindDateChange">
+	    <view class="picker">
+	      截止日期: {{dateshow}}
+	    </view>
+	  </picker>
+	  <view class=remove" bindtap="remove">取消期限</view>
+	</view>
+	<button type="" class="finish" bindtap="finish">完成</button>
+</view>

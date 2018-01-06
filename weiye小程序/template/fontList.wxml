@@ -1,0 +1,140 @@
+<template name="fontList">
+	<view class="fontBox addBox {{item.status==1?'show':'hide'}}">
+		<view class="border">
+		    <text class="textarea" data-index="{{item.index}}" value="{{item.text}}" bindtap="gotoeditor" style="font-size:{{item.fontSize}}px;font-weight:{{item.bold}};color:{{item.color}};font-style:{{item.italic}}">{{item.text?item.text:'点击编辑'}}</text>
+		</view>
+		<view class="link {{item.linkname?'show':'hide'}}" data-link="{{item.link}}"><image src="../../imgs/link.png"></image>{{item.linkname}}</view>
+		<view class="footTap fourTap">
+			<view class="delectTap" bindtap="delectFn" data-index="{{item.index}}">
+				<image src="../../imgs/delect.png"></image>
+			</view>
+			<view class="upTap {{item.index==0?'hide':item.index==item.total?'big':''}}" bindtap="upFn" data-index="{{item.index}}">
+				<image src="../../imgs/up.png"></image>
+			</view>
+			<view class="downTap {{(item.index==0&&item.total!=0)?'big':item.index==item.total?'hide':''}}" bindtap="downFn" data-index="{{item.index}}">
+				<image src="../../imgs/down.png"></image>
+			</view>
+			<view class="pushTap last" data-index="{{item.index}}" bindtap="pushFn">
+				<image src="../../imgs/push.png"></image>
+			</view>
+		</view>
+	</view>
+</template>
+
+<template name="imgList">
+	<view class="imgBox addBox {{item.status==1?'show':''}}">
+		<view class="border">
+			<image src="{{item.img}}" class="mainImg" bindload="imageLoad" style="width:{{imgwidth}}px; height:{{imgheight }}px;" bindtap="cutImg" data-index="{{item.index}}" mode="widthFix"></image>
+			<view class="textarea" data-index="{{item.index}}" bindtap="gotoeditor2" style="font-size:{{item.fontSize}}px;font-weight:{{item.bold}};color:{{item.color}};font-style:{{item.italic}}" placeholder="图片描述" >{{item.text?item.text:'图片描述'}}</view>
+			<view class="link {{item.linkname?'show':'hide'}}" data-link="{{item.link}}"><image src="../../imgs/link.png"></image>{{item.linkname}}</view>
+		</view>
+		<view class="footTap fourTap">
+			<view class="delectTap" bindtap="delectFn" data-index="{{item.index}}">
+				<image src="../../imgs/delect.png"></image>
+				
+			</view>
+			<view class="upTap {{item.index==0?'hide':item.index==item.total?'big':''}}" bindtap="upFn" data-index="{{item.index}}">
+				<image src="../../imgs/up.png"></image>
+		
+			</view>
+			<view class="downTap {{(item.index==0&&item.total!=0)?'big':item.index==item.total?'hide':''}}" bindtap="downFn" data-index="{{item.index}}">
+				<image src="../../imgs/down.png"></image>
+			
+			</view>
+			<view class="pushTap last" data-index="{{item.index}}" bindtap="pushFn">
+				<image src="../../imgs/push.png"></image>
+			
+			</view>
+		</view>
+	</view>
+</template>
+
+<template name="gifList">
+	<view class="imgBox addBox {{item.status==1?'show':''}}">
+		<view class="border">
+		<swiper autoplay="true" interval="500" circular="true" style="height:{{item.height}}px" duration="0">
+		  <block wx:for="{{item.imgs}}">
+		    <swiper-item>
+		      <image src="{{item}}" class="slide-image"/>
+		    </swiper-item>
+		  </block>
+		</swiper>
+		</view>
+		<view class="footTap fourTap">
+			<view class="delectTap" bindtap="delectFn" data-index="{{item.index}}">
+				<image src="../../imgs/delect.png"></image>
+			
+			</view>
+			<view class="upTap {{item.index==0?'hide':item.index==item.total?'big':''}}" bindtap="upFn" data-index="{{item.index}}">
+				<image src="../../imgs/up.png"></image>
+			
+			</view>
+			<view class="downTap {{(item.index==0&&item.total!=0)?'big':item.index==item.total?'hide':''}}" bindtap="downFn" data-index="{{item.index}}">
+				<image src="../../imgs/down.png"></image>
+				
+			</view>
+			<view class="pushTap last" data-index="{{item.index}}" bindtap="pushFn">
+				<image src="../../imgs/push.png"></image>
+			
+			</view>
+		</view>
+	</view>
+</template>
+
+<template name="fromList">
+	<view class="fromBox addBox {{item.status==1?'show':''}}">
+		<view class="border">
+		<view bindtap="editorFrom" data-index="{{item.index}}">
+			<view class="fromTitle">{{item.title}}</view>
+			<view  wx:for="{{item.items}}"  class="fromCon">
+				<view>{{item.title}}</view>
+			</view>
+			<button type="primary">提交</button>
+		</view>
+		</view>
+		<view class="footTap fourTap">
+			<view class="delectTap" bindtap="delectFn" data-index="{{item.index}}">
+				<image src="../../imgs/delect.png"></image>
+				
+			</view>
+			<view class="upTap {{item.index==0?'hide':item.index==item.total?'big':''}}" bindtap="upFn" data-index="{{item.index}}">
+				<image src="../../imgs/up.png"></image>
+			
+			</view>
+			<view class="downTap {{(item.index==0&&item.total!=0)?'big':item.index==item.total?'hide':''}}" bindtap="downFn" data-index="{{item.index}}">
+				<image src="../../imgs/down.png"></image>
+				
+			</view>
+			<view class="pushTap last" data-index="{{item.index}}" bindtap="pushFn">
+				<image src="../../imgs/push.png"></image>
+				
+			</view>
+		</view>
+	</view>
+</template>
+
+<template name="mapList">
+	<view class="fromBox addBox {{item.status==1?'show':''}}">
+		<view bindtap="mapFrom" data-index="{{item.index}}">
+			<map id="map" longitude="{{item.longitude}}" latitude="{{item.latitude}}" style="width: 100%; height: 300px;" markers="{{item.markers}}"></map>
+		</view>
+		<view class="footTap fourTap">
+			<view class="delectTap" bindtap="delectFn" data-index="{{item.index}}">
+				<image src="../../imgs/delect.png"></image>
+				
+			</view>
+			<view class="upTap {{item.index==0?'hide':item.index==item.total?'big':''}}" bindtap="upFn" data-index="{{item.index}}">
+				<image src="../../imgs/up.png"></image>
+				
+			</view>
+			<view class="downTap {{(item.index==0&&item.total!=0)?'big':item.index==item.total?'hide':''}}" bindtap="downFn" data-index="{{item.index}}">
+				<image src="../../imgs/down.png"></image>
+				
+			</view>
+			<view class="pushTap last" data-index="{{item.index}}" bindtap="pushFn">
+				<image src="../../imgs/push.png"></image>
+			
+			</view>
+		</view>
+	</view>
+</template>

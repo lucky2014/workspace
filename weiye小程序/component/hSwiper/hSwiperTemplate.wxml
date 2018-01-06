@@ -1,0 +1,8 @@
+<template name="hSwiperItem">
+	<view class="itemSelf"><image src="{{item.img}}"></image></view>
+    <view class="imgFont">{{item.name}}</view>
+</template>
+
+<template name="templateb">
+	{{item}}
+</template>

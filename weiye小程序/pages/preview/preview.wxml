@@ -1,0 +1,25 @@
+<view class="page  themes{{themesid}}" style="min-height:{{pmHeight}}px">
+	<view class="mainBanner" style="height:{{pmWidth}}px;{{themesid==1?'display:none;':''}}"></view>
+	<view class="container">
+		<view class="wrapper">
+			<view class="title">{{title}}</view>
+			<view class="desc">
+				{{date}}    {{name}}
+			</view>
+		</view>
+		<view class="wrapper">
+			<view wx:for="{{contect}}">
+				<import src="../../template/previewList.wxml" />
+				<template is="{{item.type==1?'fontList':item.type==2?'imgList':item.type==3?'gifList':'formList'}}" data="{{item}}"></template>
+			</view>
+		</view>
+	</view>
+</view>
+<button class="shareCon {{showBtn}}" bindtap="showtap">分享</button>
+<view class="{{showView}} cover" bindtap="hidetap">
+<view class="shareView">
+	<button class="shareBtn" open-type="share" type=""><image src="../../imgs/wechat.png"></image><view>微信</view></button>
+	<button class="shareBtn2" open-type="contact" type="" bindtap="openUrl"><image src="../../imgs/friend.png"></image><view>朋友圈</view></button>
+	<button class="copy" bindtap="copyFn"><image src="../../imgs/copy.png"></image><view>复制链接</view></button>
+</view>
+</view>

@@ -1,0 +1,53 @@
+<view>
+	<image mode="widthFix" style="width:100%" class="{{themePic==''?'hide':''}}" src="{{themePic}}"></image>
+	<view wx:for="{{contect}}" class="viewCon">
+		<import src="../../template/fontList.wxml" />
+		<template is="{{item.type==1?'fontList':item.type==2?'imgList':item.type==3?'gifList':item.type==4?'fromList':'mapList'}}" data="{{item}}"></template>
+	</view>
+	<view class="footBtns">
+		<button class="backBtn {{isEditor==''?'hide':'show'}}" id="backBtn" bindtap="option">
+			<image src="../../imgs/option.png"></image>
+			<view>设置</view>
+		</button>
+		<button class="backBtn {{isEditor==''?'show':'hide'}}" id="backBtn" bindtap="backBtn">
+			<image src="../../imgs/foot1.png"></image>
+			<view>上一步</view>
+		</button>
+		<button class="addBtn" id="addBtn" bindtap="showTap">
+			<image src="../../imgs/foot3.png"></image>
+			<view>添加</view>
+		</button>
+		<button class="tempateBtn" bindtap="showtempate">
+			<image src="../../imgs/foot2.png"></image>
+			<view>预览</view>
+		</button>
+		<button class="saveBtn" id="saveBtn" bindtap="saveFn">
+			<image src="../../imgs/foot4.png"></image>
+			<view>完成</view>
+		</button>
+	</view>
+	<view class="tapContanier {{showView?'show':'hide'}}" bindtap="hideTap">
+		<view class="tapList">
+			<view class="tapLi" bindtap="addFont">
+				<image src="../../imgs/font.png"></image>
+				<text>文字</text>
+			</view>
+			<view class="tapLi" bindtap="addPicture">
+				<image src="../../imgs/picture.png"></image>
+				<text>图片</text>
+			</view>
+			<view class="tapLi" bindtap="addGif">
+				<image src="../../imgs/gif.png"></image>
+				<text>动态图</text>
+			</view>
+			<view class="tapLi" bindtap="addFrom">
+				<image src="../../imgs/from.png"></image>
+				<text>表单</text>
+			</view>
+			<view class="tapLi" bindtap="addAddress">
+				<image src="../../imgs/address.png"></image>
+				<text>地图</text>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,103 @@
+/**index.wxss**/
+page{
+	background-color:#f4f5f7;
+}
+
+.content1{
+	background-color:#ffffff;
+	margin-top:30rpx;
+	padding:3%;
+	width:94%;
+	display:flex;
+	position:relative;
+}
+.content1 .neImg{
+	display: block;
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+.content1 .example{
+	display:block;
+	position:absolute;
+	float:left;
+	width:60%;
+	left:60px;
+	top:13px;
+}
+.content1 .neTitle{
+	display: block;
+	padding-left: 20rpx;
+}
+.content1 .title{
+	font-size:18px;
+}
+.content1 .infor{
+	font-size:16px;
+}
+.content1 .scan{
+	float:left;
+	width:10%;
+	position:absolute;
+	right:5%;
+	top:35%;
+}
+.content1 .scan .arrowIn{
+	display: block;  
+    border-right: 2px solid #adb4be; 
+    border-bottom: 2px solid #adb4be;  
+    width: 8px; 
+    height: 8px;  
+    transform: rotate(-45deg);
+    float:left;
+    position:absolute;
+    top:24%;
+    right:-10%;
+}
+.content1 .scan .scImg{
+	width:24px;
+	height:24px;
+	float:left;
+	display:inline-block;
+}
+.content2{
+	background-color:#ffffff;
+	margin-top:30rpx;
+}
+.contentMain{
+	width:100%;
+	display:flex;
+	position:relative;
+}
+.contentMain .listImg{
+	display: block;
+	width: 30px;
+	height: 30px;
+	padding:20rpx 29rpx;
+	float: left;
+}
+.contentMain .listOption{
+	width:85%;
+}
+.contentMain .bottom{
+	border-bottom:1px solid #dee0e2;
+}
+.contentMain .listOption .listLink{
+	font-size:16px;
+	color:#1b2027;
+	height:50px;
+	display:block;
+	line-height:50px;
+}
+.contentMain .arrowIn{
+	display: block;  
+    border-right: 2px solid #adb4be; 
+    border-bottom: 2px solid #adb4be;  
+    width: 8px; 
+    height: 8px;  
+    transform: rotate(-45deg);
+    float:left;
+    position:absolute;
+    top:41%;
+    right:4%;
+}

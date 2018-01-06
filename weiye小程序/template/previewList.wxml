@@ -1,0 +1,39 @@
+<template name="fontList">
+	<view class="fontBox addBox {{item.status==1?'show':'hide'}}">
+		<text class="textarea" data-index="{{item.index}}" value="{{item.text}}" auto-height="true" bindtap="gotoeditor" style="font-size:{{item.fontSize}}px;font-weight:{{item.bold}};color:{{item.color}};font-style:{{item.italic}}">{{item.text}}</text>
+		<view class="link {{item.linkname?'show':'hide'}}" data-link="{{item.link}}"><image src="../../imgs/link.png"></image>{{item.linkname}}</view>
+	</view>
+</template>
+
+<template name="imgList">
+	<view class="imgBox addBox {{item.status==1?'show':''}}">
+		<image src="{{item.img}}" class="mainImg" bindload="imageLoad" style="width:{{imgwidth}}px; height:{{imgheight }}px;" bindtap="cutImg" data-index="{{item.index}}" mode="widthFix"></image>
+		<view class="textarea {{item.text?'show':'hide'}}" data-index="{{item.index}}" bindtap="gotoeditor" style="font-size:{{item.fontSize}}px;font-weight:{{item.bold}};color:{{item.color}};font-style:{{item.italic}}">{{item.text}}</view>
+		<view class="link {{item.linkname?'show':'hide'}}" data-link="{{item.link}}"><image src="../../imgs/link.png"></image>{{item.linkname}}</view>
+	</view>
+</template>
+
+<template name="gifList">
+	<view class="imgBox addBox {{item.status==1?'show':''}}">
+		<swiper autoplay="true" interval="500" circular="true" style="height:{{item.height}}px"  duration="0">
+		  <block wx:for="{{item.imgs}}">
+		    <swiper-item>
+		      <image src="{{item}}" class="slide-image"/>
+		    </swiper-item>
+		  </block>
+		</swiper>
+	</view>
+</template>
+
+
+<template name="formList">
+	<view class="formBox addBox {{item.status==1?'show':''}}">
+		<view bindtap="editorFrom" data-index="{{item.index}}">
+			<view class="fromTitle">{{item.title}}</view>
+			<view  wx:for="{{item.items}}"  class="fromCon">
+				<input placeholder="{{item.title}}"></input>
+			</view>
+			<button type="primary">提交</button>
+		</view>
+	</view>
+</template>

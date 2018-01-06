@@ -1,0 +1,86 @@
+/**index.wxss**/  
+page{
+	background-color:#f4f5f7;
+}
+.swiper-tab{  
+    width: 100%;  
+    border-bottom: 1px solid #ebecee;  
+    text-align: center;  
+    line-height: 40px;
+}  
+.swiper-tab-list{  font-size: 30rpx;  
+    display: inline-block;  
+    width: 50%;  
+    color: #777777;  
+}  
+.on{ 
+	color: #1993e6;  
+    border-bottom: 2px solid #1993e6;
+}  
+  
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }  
+.formContainer{
+    width:90%;
+    margin:10px auto;
+    background-color:#fff;
+    border-radius:5px;
+}
+.formContainer .viewHeader{
+    background-color:#56d176;
+    color:#fff;
+    height:42px;
+    border-radius:5px 5px 0 0;
+    font-size:14px;
+    padding: 0 10px;
+}
+.formContainer .viewHeader view{
+    height:42px;
+    line-height:42px;
+    float:left;
+}
+.formContainer .viewHeader view.stuat{
+    float:right;
+}
+.title{
+    padding:10px;
+    font-size:14px;
+    overflow:hidden;
+}
+.titletop{
+    font-weight:bold;
+    line-height:25px;
+    margin-bottom:10px;
+}
+.titlemd{
+    float:left;
+    border:1px solid #afe9bf;
+    padding:0 5px;
+    color:#afe9bf;
+}
+.titleft{
+    float:right;
+}
+.titleft view{
+    float:left;
+    margin-left:20px;
+    color:#858c96;
+}
+.container{
+    padding:10px;
+    border-top:2px dashed #f0f0f0;
+    color:#606061;
+    font-size:14px;
+}
+.container .conTitle{
+    color:#858c96;
+}
+.infoDate,infoTime{
+    width:50%;
+    float:left;
+}
+.conTitle{
+    float:left;
+}
+.container>view{
+    line-height:30px;
+}

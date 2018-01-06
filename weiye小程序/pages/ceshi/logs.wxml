@@ -1,0 +1,1 @@
+<contact-button size="27" bindtap="bindtap"></contact-button>

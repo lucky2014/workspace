@@ -1,0 +1,225 @@
+page{background-color:#fff;}
+.wrapper{padding: 0 16px;}
+.title{padding-top: 1rem;margin-bottom: 0.2rem;font-weight: bold;letter-spacing: 1px;text-shadow: 1px 1px 0 hsla(0,0%,10%,.1);}
+.desc{
+	color: #1b2027;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+}
+.fourTap{
+	display:none;
+}
+.addBox{
+    margin:16px 0;
+}
+.mainImg{
+	width :100%;
+}
+.link image{
+	width: 14px;
+    margin-top: 5px;
+    float: left;
+    height: 14px;
+    background-color: transparent;
+    display: inline-block;
+}
+.link{
+	display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1993e6;
+}
+.fontBox{
+	margin:16px 0;
+}
+view{
+    word-break:break-all;
+}
+.footer{
+    padding:23px 0 5px 0;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,.9);
+    height:104px;
+    overflow-x:scroll;
+    z-index:99;
+}
+.footer view view{
+    display:inline-block;
+    width:60px;
+    height:90px;
+    margin-left:15px;
+}
+.footer view view.choose{
+    border:2px solid #1993e6;
+    height:99px;
+    width:66px;
+    margin-top:0px;
+}
+.footer image{
+    width:100%;
+    height:100%;
+}
+.finish{
+    position:fixed;
+    bottom:140px;
+    right:10px;
+    height:32px;
+    width:85px;
+    border-radius:16px;
+    text-align:center;
+    line-height:32px;
+    background:#FF5900;
+    color:#fff;
+    font-size:14px;
+    z-index:99;
+}
+.tempate{
+    position:fixed;
+    bottom:140px;
+    right:15px;
+    height:60px;
+    width:60px;
+}
+page{
+    min-height:100%;
+}
+.page{
+    height:100%;
+    box-sizing:border-box;
+}
+.mainBanner{
+    width:100%;
+    background-size:100% 100%;
+}
+.page.themes2{
+    background-size:100% 100%;
+    background-color:#b51235;
+}
+.page.themes2 .container{
+    background-color:#fff;
+    width:90%;
+    margin:0 auto;
+    border-radius:7px;
+    margin-top:-80px;
+    padding-bottom:10px;
+}
+.page.themes2 .mainBanner{
+    background-image:url(https://ep.diantimes.cn/group1/M00/01/26/wKgBwFo46kGAaQlnAAEmGLaq7rU480.jpg);
+}
+.page.themes2 .title{
+    text-align:center;
+    color:#9e5263;
+}
+.page.themes2 .desc{
+    text-align:center;
+    color:#9e5263;
+    margin-top:10px;
+}
+.page.themes3{
+    background-size:100% 100%;
+    background-color:#ff7b10;
+}
+.page.themes3 .container{
+    background-color:rgba(255,255,255,0.25);
+    width:90%;
+    margin:0 auto;
+    border-radius:7px;
+    margin-top:-80px;
+    padding-bottom:10px;
+}
+.page.themes3 .mainBanner{
+    background-image:url(https://ep.diantimes.cn/group1/M00/01/26/wKgBwFo46kGAMHDSAAD7DFTu6kM240.jpg);
+}
+.page.themes3 .title{
+    text-align:center;
+    color:#fff;
+}
+.page.themes3 .desc{
+    text-align:center;
+    color:#fff;
+    margin-top:10px;
+}
+.page.themes4{
+    background-size:100% 100%;
+    background-color:#4aacf3;
+}
+.page.themes4 .container{
+    background-color:rgba(255,255,255,0.25);
+    width:90%;
+    margin:0 auto;
+    border-radius:7px;
+    margin-top:-80px;
+    padding-bottom:10px;
+}
+.page.themes4 .mainBanner{
+    background-image:url(https://ep.diantimes.cn/group1/M00/01/26/wKgBwFo46kGAX4lkAACyWJUJ5fU276.jpg);
+}
+.page.themes4 .title{
+    text-align:center;
+    color:#004c7d;
+}
+.page.themes4 .desc{
+    text-align:left;
+    color:#004c7d;
+    margin-top:10px;
+}
+.fromTitle{
+    min-height:40px;
+    line-height:40px;
+    font-weight:bold;
+    fongt-size:14px;
+    text-align:center;
+    margin-bottom:10px;
+}
+.fromCon input{
+    border:1px solid #f0f0f0;
+    height:40px;
+    padding:0 12px;
+    font-size:14px;
+    margin-bottom:10px;
+    line-height:40px;
+    background-color:#fff;
+}
+.editorFrom button{
+    background-color:#56d176;
+    color:#fff;
+}
+.footAll{
+    position:fixed;
+    bottom:20px;
+    height:48px;
+    width:258px;
+    left:50%;
+    margin-left:-129px;
+    z-index:59;
+}
+.footAll>view{
+    height:100%;
+    width:128px;
+    float:left;
+    background-color:#FF5900;
+    box-shadow:0 1px 2px #000;
+    font-size:18px;
+    color:#fff;
+}
+.footAll .footLeft{
+    border-radius:24px 0 0 24px;
+}
+.footAll .footRight{
+    border-radius:0 24px 24px 0;
+}
+.footAll image{
+    width:20px;
+    margin-top:15px;
+    margin-left:30px;
+    float:left;
+}
+.footAll view view{
+    float:left;
+    margin-top:13px;
+    margin-left:5px;
+}

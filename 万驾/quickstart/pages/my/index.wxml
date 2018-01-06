@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="userinfo">
+    <view><image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image></view>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+
+<view class="wrap">
+  <view class="section" bindtap="bindorderTap">
+    <text>我的订单</text>
+    <rich-text></rich-text>
+  </view>
+  <view class="section">
+    <text>理赔通道</text>
+    <rich-text></rich-text>
+  </view>
+  <view class="section">
+    <text>联系客服</text>
+    <rich-text></rich-text>
+  </view>
+  <view class="section">
+    <text>关于万驾保盒</text>
+    <rich-text></rich-text>
+  </view>
+</view>
+
+
+<!--view class="btn-area">
+  <navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+  <navigator url="../../redirect/redirect/redirect?title=redirect" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+  <navigator url="/page/index/index" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
+</view-->

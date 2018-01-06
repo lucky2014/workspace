@@ -1,0 +1,27 @@
+<view>
+	<textarea maxlength="-1" show-confirm-bar="true" placeholder="点击进行编辑" auto-focus="true" value="{{text}}" style="font-size:{{fontSize}}px;font-weight:{{bold}};color:{{color}};font-style:{{italic}};" bindblur="blurFn"></textarea>
+	<view class="control {{isshowctrl}}">
+		<view bindtap="addSize"><image src="../../imgs/fontjia.png" mode="widthFix"></image></view>
+		<view bindtap="minusSize"><image src="../../imgs/fontjian.png" mode="widthFix"></image></view>
+		<view bindtap="bold"><image src="{{boldControl?'../../imgs/fontcu2.png':'../../imgs/fontcu.png'}}" mode="widthFix"></image></view>
+		<view bindtap="italic"><image src="{{italicControl?'../../imgs/fontxie2.png':'../../imgs/fontxie.png'}}" mode="widthFix"></image></view>
+		<view bindtap="color"><image src="{{colorControl?'../../imgs/fontcolor2.png':'../../imgs/fontcolor.png'}}" mode="widthFix"></image></view>
+		<view bindtap="input"><image src="{{inputControl?'../../imgs/input2.png':'../../imgs/input.png'}}" mode="widthFix"></image></view>
+	</view>
+	<view class="colorList {{isshowcolor}}">
+		<view class="colorIcon" wx:for="{{colorList}}" bindtap="choose">
+			<view style="background-color:#{{item}}" data-color="{{item}}"></view>
+		</view>
+	</view>
+	<view class="inputList {{isshowinput}}">
+		<view class="first">
+			<view>链接地址</view>
+			<input placeholder="输入需要跳转的网址" value="{{link}}" id="link" bindblur="linkBlur"></input>
+		</view>
+		<view>
+			<view>链接描述</view>
+			<input placeholder="输入链接的文字描述" value="{{linkname}}" id="linkname" bindblur="linknameBlur"></input>
+		</view>
+	</view>
+	<button type="" class="finish" bindtap="finish">完成</button>
+</view>

@@ -1,0 +1,18 @@
+*{ margin: 0; padding:0; list-style: none; font-family:sans-serif; font-size: .98em;}
+body,html{ max-width: 740px; margin: 0 auto;}
+.hide{ display: none;}
+img{ display: block; vertical-align: bottom;}
+
+.showResult{ position: absolute; z-index: 100; width: 80%; left: 10%;
+top: 10%; display: none;}
+.showResult .percent{position: absolute; z-index: 101; top: 42vh; right: 22vw; font-size: 1.8rem; color: #326b4e; width: 46px; 
+text-align: center; letter-spacing: -2px;  font-family: Arial;}
+.showResult .bb{ position: absolute; left: 18%; width: 64%; bottom: 4vh;}
+.showResult .bb #shareBtn{ display: block; margin: 10px 0;}
+
+/*分享后打开的页面*/
+.shareDetail{ background: url("../imgs/p1_0.jpg") 0 0; background-size:100% 100%; height: 100%; width: 100%; position: relative;}
+.shareDetail .bb{ position: absolute; left: 26%; width: 48%; bottom: 10vh;}
+.shareDetail .percent{position: absolute; z-index: 101; top: 45vh; right: 23vw; font-size: 1.8rem; color: #326b4e; width: 46px; 
+text-align: center; letter-spacing: -2px;  font-family: Arial;}
+.shareDetail a{ display: block;}

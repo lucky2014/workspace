@@ -1,0 +1,99 @@
+.inputView{
+	background-color:#fff;
+	height:50px;
+	border-top:1px solid #ebecee;
+	border-bottom:1px solid #ebecee;
+	font-size:16px;
+	margin-top:15px;
+}
+.inputView view{
+	height:50px;
+	line-height:50px;
+	float:left;
+	padding-left:15px;
+	font-size:16px;
+	color:#1b2027;
+}
+.inputView input{
+	height:50px;
+	float:left;
+	padding-left:10px;
+	width:215px;
+}
+.inputView image{
+	height:14px;
+	width:8px;
+	float:right;
+	margin-right:15px;
+	margin-top:18px;
+}
+.inputView switch{
+	float:right;
+	margin-right:15px;
+	margin-top:9px;
+}
+.fm{
+	height:43px;
+	line-height:43px;
+	font-size:16px;
+	color:#858c96;
+	padding-left:15px;
+}
+.fmBox{
+	background-color:#fff;
+	padding:15px 0;
+	overflow:hidden;
+	position:relative
+}
+.fmBox view{
+	width:33.3%;
+	float:left;
+	box-sizing:border-box;
+	position:relative;
+}
+.fmBox view image{
+	width:88px;
+	height:62px;
+	display:block;
+	margin:10px auto;
+}
+.fmBox view image.check{
+	width:22px;
+	height:22px;
+	position:absolute;
+	right:20%;
+	top:7px;
+}
+.finish{
+	position:fixed;
+	bottom:30px;
+	width:100%;
+	background:#FF5900;
+	border-radius:26px;
+	height:48px;
+	width:200px;
+	left:50%;
+	margin-left:-100px;
+	color:#fff;
+	font-size:20px;
+}
+.inputView view.classifg{
+	float:right;
+	margin-right:10px;
+}
+.fmBox image{
+	width:90%;
+	display:block;
+	margin:0 auto;
+}
+.fmBox view{
+	position:absolute;
+	left:5%;
+	bottom:15px;
+	background:rgba(0,0,0,.6);
+	color:#fff;
+	line-height:30px;
+	text-align:center;
+	width:90%;
+	font-size:12px;
+}

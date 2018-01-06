@@ -1,0 +1,14 @@
+/**index.wxss**/
+.ordersList{ background:#fff; border-top:1px solid #eee;}
+.ordersList .section{ border-bottom:1px solid #eee; padding:6px 14px; position:relative;}
+.ordersList .section .title{ font-size:16px; display:block; width:60%; height:30px; line-height:30px;}
+.ordersList .section .time{ font-size:14px; color:#999; line-height:22px;display:block; width:60%;}
+
+.ordersList .section rich-text{ position:absolute; right:14px; top:6px; width:30%; text-align:right;}
+.ordersList .section .status{ font-size:14px; line-height:22px; display:block; font-style:normal;}
+.ordersList .section .price{ font-size:16px; height:30px; line-height:30px; color:#148aef;}
+.ordersList .section .price.cancel{color:#999;}
+
+.red{ color:red;}
+.green{ color:green;}
+.cancel{color:#999;}

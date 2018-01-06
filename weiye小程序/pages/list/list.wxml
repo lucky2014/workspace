@@ -1,0 +1,32 @@
+<view class="list {{empty?'show':'hide'}}">
+	<view  wx:for="{{list}}"  class="listCon">
+		<view class="listTop"  data-essayid="{{item.essayid}}" data-createTime="{{item.createTime}}" bindtap="preview">
+			<view class="listLeft">
+				<text class="listName">{{item.name}}</text>
+				<view class="dateDiv">
+					<text class="listDate">{{item.date}}</text>
+					<image src="../../imgs/look.png" class="lookIcon"></image>
+					<text class="listDate">{{item.look}}</text>
+					<image src="../../imgs/good.png" class="goodIcon"></image>
+					<text class="listDate">{{item.good}}</text>
+				</view>
+			</view>
+			<image src="{{item.img}}" class="listRight"></image>
+		</view>
+		<view class="listFoot">
+			<view bindtap="ediorFn" data-essayid="{{item.essayid}}">
+				编辑
+			</view>
+			<view bindtap="synchFn" data-essayid="{{item.essayid}}">
+				分享
+			</view>
+			<view bindtap="delectFn"  data-essayid="{{item.essayid}}" data-index="{{index}}">
+				删除
+			</view>
+			<view bindtap="countFn"  data-essayid="{{item.essayid}}" data-hasObj="{{item.hasObj}}">
+				统计
+			</view>
+		</view>
+	</view>
+</view>
+<button type="" class="addArt {{empty?'show':'hide'}}" bindtap="gotoeditor">创建微页</button>

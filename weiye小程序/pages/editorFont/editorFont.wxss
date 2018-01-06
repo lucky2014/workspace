@@ -1,0 +1,79 @@
+textarea{
+	background-color:#fff;
+	width:100%;
+	padding:15px 10px;
+	box-sizing:border-box;
+	font-size:14px;
+	color: #3b3c3d;
+	height:200px;
+}
+.finish{
+	position:fixed;
+	bottom:30px;
+	width:100%;
+	background:#FF5900;
+	border-radius:26px;
+	height:48px;
+	width:200px;
+	left:50%;
+	margin-left:-100px;
+	color:#fff;
+	font-size:20px
+}
+.control{
+	background-color:#fff;
+	overflow:hidden;
+}
+.control view{
+	width:16.66%;
+	float:left;
+	text-align:center;
+}
+.control image{
+	width:30px;
+}
+.control image.choose{
+	background-color:#1993e6;
+}
+.colorList{
+	background-color:#f3f5f7;
+	overflow:hidden;
+}
+.colorIcon{
+	float:left;
+	width:12.5%;
+	margin-top:10px;
+}
+.colorIcon view{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+}
+.inputList{
+	background-color:#fff;
+	border-top:1px solid #dee0e2;
+	border-bottom:1px solid #dee0e2;
+	margin-top:10px;
+	padding-left:10px;
+}
+.inputList view{
+	height:50px;
+}
+.inputList view.first{
+	border-bottom:1px solid #dee0e2;
+}
+.inputList view view{
+	float:left;
+	width:20%;
+	text-align:center;
+	line-height:50px;
+	font-size:14px;
+}
+.inputList view input{
+	float:left;
+	width:75%;
+	line-height:50px;
+	height:50px;
+	font-size:14px;
+	margin-left:5%;
+}

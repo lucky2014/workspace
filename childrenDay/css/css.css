@@ -1,0 +1,315 @@
+*{ margin: 0; padding:0; list-style: none; font-family:sans-serif; font-size: .98em;}
+body,html{ max-width: 740px; margin: 0 auto;}
+.hide{ display: none;}
+img{ display: block; vertical-align: bottom;}
+
+.msg{ text-align: center; position: absolute; left: 0; top: 40%; z-index: 200; width: 100%; display: none;}
+.msg span{ display: inline-block; padding: 6px 12px; background: rgba(0,0,0,.6); color: #fff; margin: 0 auto;
+ border-radius: 6px;}
+
+/*分享页*/
+.p5{ background: url("../imgs/p5_bg.jpg") 0 0; background-size: 100% 100%;}
+.p5 .rt{ display: block; float: left; width: 100%; position: relative;}
+.p5 .num input{ position: absolute; width: 29%; left: 41%; height: 35px; background: none; text-align: center; line-height: 35px;
+ color: #4d8468; font-size: 1.2em; border:none; margin-top: 4px; top: 7.7em;} 
+.p5 .num{ margin: 40px 8% 0; position: relative;}
+.p5 .num img{ width: 100%;}
+.p5 .num img.btb{ position: absolute; left: 28%; top: 14.1em; width: 44%;}
+.p5 .btn{ clear: both; position: relative;}
+
+.p5 .p5_textBox{ margin-left: 10%; width: 81%; margin-top: 40px;}
+.p5 .p5_textBox img{ width: 100%;}
+.shareMark{ background: rgba(0,0,0,.5); position: absolute; left: 0; top: 0; width: 100%; bottom:0; z-index: 101; display: none;}
+.p5 .shareMark img{ width: 60%; float: right; margin-right: 10px;}
+
+ /*第一页*/
+.p1{ background: url("../imgs/p1_0.jpg") 0 0; position: relative; background-size:100% 100%;}
+.p1 .p1Bg{ position: absolute; left: 0; top: 0; z-index: 1;}
+.p1 .p1_textBox{ margin-left: 5%; width: 70%; margin-top: 50px;}
+.p1 .p1_textBox img{ width: 100%;}
+/*----------------第一页文字效果------------------*/
+.text1.fadeIn1{
+  -webkit-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation: fadeIn1 2s;
+  animation: fadeIn1 2s;
+}
+.text2.fadeIn2{
+  -webkit-animation: fadeIn2 4s;
+  animation: fadeIn2 4s;
+}
+.text3.fadeIn3{
+  -webkit-animation: fadeIn3 6s;
+  animation: fadeIn3 6s;
+}
+.text4.fadeIn4{
+  -webkit-animation: fadeIn4 8s;
+  animation: fadeIn4 8s;
+}
+.text5.fadeIn5{
+  -webkit-animatio: fadeIn5 10s;
+  animation: fadeIn5 10s;
+}
+.p5 .num.fadeIn6{
+  -webkit-animatio: fadeIn6 12s;
+  animation: fadeIn6 12s;
+}
+@-webkit-keyframes fadeIn1 {
+  0% {
+    opacity: 0
+  }
+  99% {
+    opacity: 1
+  }
+  100% {
+    opacity: 1
+  }
+}
+@-webkit-keyframes fadeIn2 {
+  0% {
+    opacity: 0
+  }
+  50% {
+    opacity: 0
+  }
+  99% {
+    opacity: 1
+  }
+  100% {
+    opacity: 1
+  }
+}
+@-webkit-keyframes fadeIn3 {
+  0% {
+    opacity: 0
+  }
+  67% {
+    opacity: 0
+  }
+  99% {
+    opacity: 1
+  }
+  100% {
+    opacity: 1
+  }
+}
+@-webkit-keyframes fadeIn4 {
+  0% {
+    opacity: 0
+  }
+  75% {
+    opacity: 0
+  }
+  99% {
+    opacity: 1
+  }
+  100% {
+    opacity: 1
+  }
+}
+@-webkit-keyframes fadeIn5 {
+  0% {
+    opacity: 0
+  }
+  80% {
+    opacity: 0
+  }
+  99% {
+    opacity: 1
+  }
+  100% {
+    opacity: 1
+  }
+}
+@-webkit-keyframes fadeIn6 {
+  0% {
+    opacity: 0
+  }
+  83% {
+    opacity: 0
+  }
+  99% {
+    opacity: 1
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+/*第一页手势效果*/
+.p1 .hand{ position: absolute; z-index: 10; right: 20%; top:78vh; width: 20%; display: none;
+  -webkit-transform: scale3d(.5,.5,.5)
+  transform: scale3d(.5,.5,.5)
+  animation: handMove 1.8s linear infinite;
+  -webkit-animation: handMove 1.8s linear infinite;
+}
+.circle1, .circle2, .circle3{ position: absolute; z-index: 10; width: 20px; height: 20px; border-radius: 100%; 
+  background: rgba(249, 118, 77, 0.8); right: 9.8vw; top: 59.6vh; display: none;
+}
+.p1 .circle1, .p1 .circle2, .p1 .circle3{
+  top: 78vh;
+  right: 30%;
+}
+.circle1 {
+  animation: sploosh 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  -webkit-animation: sploosh 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+.circle2 {
+  animation: sploosh 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  -webkit-animation: sploosh 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+.circle3 {
+  animation: sploosh 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  -webkit-animation: sploosh 1.8s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+@keyframes sploosh {
+  0% {
+    box-shadow: 0 0 0 0px rgba(249, 118, 77, 0.4);
+    background: rgba(249, 118, 77, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0 40px rgba(249, 118, 77, 0);
+    background: rgba(249, 118, 77, 0);
+  }
+}
+
+/*2,3,4页手指*/
+@keyframes handMove {
+  0% {
+    -webkit-transform: scale3d(.5,.5,.5)
+    transform: scale3d(.5,.5,.5)
+  }
+  50% {
+    -webkit-transform: scale3d(1.3,1.3,1.3);
+    transform: scale3d(1.3,1.3,1.3);
+  }
+  100% {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1)
+  }
+}
+@keyframes handMove {
+  0% {
+    -webkit-transform: scale3d(.5,.5,.5)
+    transform: scale3d(.5,.5,.5)
+  }
+  50% {
+    -webkit-transform: scale3d(1.3,1.3,1.3);
+    transform: scale3d(1.3,1.3,1.3);
+  }
+  100% {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1)
+  }
+}
+
+ /*第二页*/
+.p2,.p2_1{ background: url("../imgs/p2_0.jpg") 0 0; background-size:100% 100%;}
+.cm_main .banner{ width: 90%; margin: 0 auto; padding-top: 20px; position: relative;}
+.cm_main .banner img{ width: 100%;}
+.cm_main .banner img.hand{ position: absolute; z-index: 10; right: 4px; bottom:-20px; width: 20%; display: none;
+  -webkit-transform: scale3d(.5,.5,.5)
+  transform: scale3d(.5,.5,.5)
+  animation: handMove 1.8s linear infinite;
+  -webkit-animation: handMove 1.8s linear infinite;
+}
+.cm_main .textBox{ padding:6px 0 0 0; position: absolute; bottom: 36px; display: none;}
+
+.cm_main .textBox .text1,.cm_main .textBox .text2,.cm_main .textBox .text3{ padding-left: 13%; width: 75%; padding-bottom: 4px;}
+.cm_main .text1{ padding-top: 20px;}
+.cm_main .text1 img{ width: 90%;}
+.cm_main .text2 img{ width: 70%;}
+.cm_main .text3 img{ width: 100%;}
+
+/*---------2,3,4页翻页效果*/
+.p2_front,
+.p2_back {
+  height: 100%;
+  position: absolute;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+.p2_front {
+  -webkit-transform: rotateY( 0deg);
+  -moz-transform: rotateY( 0deg);
+  -o-transform: rotateY( 0deg);
+  transform: rotateY( 0deg);
+}
+
+.p2_back {
+  -webkit-transform: rotateY( -180deg);
+  -moz-transform: rotateY( -180deg);
+  -o-transform: rotateY( -180deg);
+  transform: rotateY( -180deg);
+}
+
+.p2_front.font {
+  -webkit-transform: rotateY( 180deg);
+  -moz-transform: rotateY( 180deg);
+  -o-transform: rotateY( 180deg);
+  transform: rotateY( 180deg);
+}
+
+.p2_back.back {
+  -webkit-transform: rotateY( 0deg);
+  -moz-transform: rotateY( 0deg);
+  -o-transform: rotateY( 0deg);
+  transform: rotateY( 0deg);
+}
+
+/*第二页反面*/
+.p2_1 .btn{ width: 50%; margin: 50px 25% 0; text-align: center;}
+.p2_1 .btn img{ width: 100%;}
+
+ /*第三页*/
+.p3{ background: url("../imgs/p3_1.jpg") 0 0; background-size:100% 100%;}
+.p4{ background: url("../imgs/p4_1.jpg") 0 0; background-size:100% 100%;}
+
+.resMask{ position: absolute; z-index:99; background: rgba(0,0,0,.5); width: 80%; left: 0; bottom: 0; top: 0; 
+padding: 24% 10% 0; display: none;}
+.showResult{ position: absolute; z-index: 100; width: 80%; left: 10%;
+top: 10%; display: none;}
+.showResult .percent{position: absolute; z-index: 101; top: 42vh; right: 22vw; font-size: 1.8rem; color: #326b4e; width: 46px; 
+text-align: center; letter-spacing: -2px;  font-family: Arial;}
+.showResult .bb{ position: absolute; left: 18%; width: 64%; bottom: 4vh;}
+.showResult .bb #shareBtn{ display: block; margin: 10px 0;}
+
+/*分享后打开的页面*/
+.shareDetail{ background: url("../imgs/p1_0.jpg") 0 0; background-size:100% 100%; height: 100%; width: 100%; position: relative;}
+.shareDetail .bb{ position: absolute; left: 26%; width: 48%; bottom: 25vh;}
+.shareDetail .percent{position: absolute; z-index: 101; top: 54vh; right: 32vw; font-size: 1.8rem; color: #326b4e; width: 46px; 
+text-align: center; letter-spacing: -2px;  font-family: Arial;}
+.shareDetail a{ display: block;}
+
+/*支付成功弹框*/
+.payOk{position: fixed; left: 0; width: 100%; z-index: 111; top: 0; height: 100%; background: rgba(0,0,0,.4); display: none;}
+.payOk img{ width: 80%; margin: 40vh auto 0;}
+
+.musicPlay img{position: absolute;top: 10px;right: 10px;width: 8%;}
+.musicPlay img.change{animation:myfirst 1s linear infinite;-webkit-animation:myfirst 1s linear infinite;}
+
+@keyframes myfirst
+{
+    0%{transform:rotate(0deg);}
+    50%{transform:rotate(180deg);}
+    100%{transform:rotate(360deg);}
+}
+@-webkit-keyframes myfirst
+
+{
+
+　　0%{-webkit-transform:rotate(0deg);}
+    50%{-webkit-transform:rotate(180deg);}
+    100%{-webkit-transform:rotate(360deg);}
+
+}
+
+
+

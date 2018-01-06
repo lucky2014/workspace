@@ -1,0 +1,9 @@
+page{
+	background-color:#f4f5f7;
+}
+.hide{
+	display:none !important;
+}
+.show{
+	display:block !important;
+}

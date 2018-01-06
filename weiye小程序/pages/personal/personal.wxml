@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<view class="container" wx:for="{{arrow}}">
+  <view class="content1">
+    <image src="{{item.image}}" class="neImg" background-size="cover"></image>
+    <view class="example">
+      <text class="neTitle title">{{item.title}}</text>
+      <text class="neTitle infor">{{item.infor}}</text>
+    </view>
+    <view class="scan">
+      <image src="../../imgs/scan.png" class="scImg"></image>
+      <view class="arrowIn"></view>
+    </view>
+  </view>
+  <view class="content2">
+    <view class="contentMain">
+        <image src="../../imgs/listIcon_1.png" class="listImg" background-size="cover"></image>
+        <view class="listOption bottom">
+          <text class="listLink">意见反馈</text>
+          <view class="arrowIn"></view>
+        </view>     
+    </view>
+    <view class="contentMain">
+        <image src="../../imgs/listIcon_2.png" class="listImg" background-size="cover"></image>
+        <view class="listOption bottom">
+          <text class="listLink">关于版本</text>
+          <view class="arrowIn"></view>
+        </view>     
+    </view>
+    <view class="contentMain">
+        <image src="../../imgs/listIcon_3.png" class="listImg" background-size="cover"></image>
+        <view class="listOption">
+          <text class="listLink">常见问题</text>
+          <view class="arrowIn"></view>
+        </view>     
+    </view>
+  </view>
+  <view class="content2">
+    <view class="contentMain">
+        <image src="../../imgs/listIcon_4.png" class="listImg" background-size="cover"></image>
+        <view class="listOption bottom">
+          <text class="listLink">设置</text>
+          <view class="arrowIn"></view>
+        </view>     
+    </view>
+    <view class="contentMain">
+        <image src="../../imgs/listIcon_5.png" class="listImg" background-size="cover"></image>
+        <view class="listOption">
+          <text class="listLink">分享</text>
+          <view class="arrowIn"></view>
+        </view>     
+    </view>
+  </view>
+   <view class="content2">
+    <view class="contentMain">
+        <image src="../../imgs/listIcon_6.png" class="listImg" background-size="cover"></image>
+        <view class="listOption">
+          <text class="listLink">信息验证</text>
+          <view class="arrowIn"></view>
+        </view>     
+    </view>
+  </view>
+</view>
