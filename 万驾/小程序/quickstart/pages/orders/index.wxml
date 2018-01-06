@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="ordersList">
+  <view class="section" wx:for="{{list}}">
+    <text class="time">{{item.time}}</text>
+    <text class="title">{{item.title}}</text>
+    <rich-text nodes="{{item.nodes}}"></rich-text>
+  </view>
+</view>
+

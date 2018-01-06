@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="mealsList" wx:for="{{list}}" wx:key="{{index}}" bindtap="bindViewTap" id="{{index}}">
+    jdshakda
+</view>
+

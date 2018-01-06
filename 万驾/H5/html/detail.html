@@ -1,0 +1,110 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=100%,initial-scale=1.0,maximum-scale=1.3,user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>详情页</title>
+		<link rel="stylesheet" href="css/common.css">
+	</head> 
+	<body style="padding-bottom:80px;">
+		<section class="banner">
+			<img src="imgs/test.jpg" />
+			<h3>再也不用担心考试挂科了！</h3>
+		</section>
+		
+
+		<section class="contents">
+			<h4><i></i>产品简介</h4>
+			<table class="table">
+				<tr>
+					<th>项目</th>
+					<th>套餐详情</th>
+				</tr>
+				<tr>
+					<td>科目二单科不通过保险</td>
+					<th class="or" rowspan="4">￥200</th>
+				</tr>
+				<tr>
+					<td>科目二单科不通过保险</td>
+				</tr>
+				<tr>
+					<td>科目二单科不通过保险</td>
+				</tr>
+				<tr>
+					<td>科目二单科不通过保险</td>
+				</tr>
+			</table>
+
+
+			<h4 class="pSpace"><i></i>售后与理财</h4>
+			<p>中央经济工作会议12月18日至20日在北京举行。会议首次提出习近平新时代中国特色社会主义经济思想，成为各界关注的焦点。这一思想有何特点？内涵是什么？对我国经济发展有何重要意义？新华社《学习进行时》原创品牌栏目“讲习所”今天推出文章，为您解读</p>
+		</section>
+
+		<section class="contents" id="notice">
+			<h4><i></i>告知</h4>
+			<p><b class="blo">请仔细阅读本产品投保须知、保险条款，并请特别留意条款中的“<span class="red">责任免除</span>”部分。</b>
+<strong class="blo">免责条款：</strong>
+因被保险人在某些特定原因、特定情形下或期间内的状态会影响保险风险等级的评定，保险公司在这些情况下的保险责任将会免除，被保险人发生的保险事故，保险公司不承担给付保险金的责任。具体免责内容详情请见产品条款及免责条款规定。
+<strong class="blo">投保人和被保险人应就本公司提出的询问如实告知，否则本公司将按《保险法》相关规定处理。投保单中填写各项内容均属实，或有告知不实，保险公司有权解除保险合同，对于合同解除前发生的任何事故，保险公司不承担任何责任。</strong></p>
+
+			<div class="btn"><input type="checkbox" id="checkB" />我已阅读</div>
+		</section>
+
+
+
+		<footer class="detail">
+			<ul>
+				<li><a href="index.html"><img src="imgs/home.png" />首页</a></li>
+				<li id="shareBtn"><img src="imgs/share.png" />分享</li>
+			</ul>
+			<div>￥200</div>
+			<a class="buy" id="buy">立即购买</a>
+		</footer>
+
+		<div class="mask"><img src="imgs/share1.png" /></div>
+
+		<div id="tip"><span>请仔细阅读告知项内容！</span></div>
+		
+		<script src="js/jquery-1.8.3.js"></script>
+		<script>
+		$(function(){
+			//分享
+			$("#shareBtn").click(function(){
+				$(".mask").show();
+				$("body").css({
+					height: "100%",
+					overflow: "hidden"
+				});
+			});
+
+			$(".mask").click(function(){
+				$(".mask").hide();
+				$("body").attr("style","");
+			});
+
+			//点击购买
+			var checkB = $("#checkB"); //是否选中
+			$("#buy").click(function(){
+				if(checkB.get(0).checked){
+					location.href = "buy.html";
+				}else{
+					$("#tip").show();
+					location.href = "#notice";
+					setTimeout(function(){
+						$("#tip").hide();
+					},1500);
+					return false;
+				}
+			});
+
+
+		});
+		</script>
+	</body>
+</html>

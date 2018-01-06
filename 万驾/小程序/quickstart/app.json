@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/orders/index",
+    "pages/reg/index",
+    "pages/my/index",
+    "pages/detail/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "万驾保盒",
+    "navigationBarTextStyle":"#148aef"
+  },
+  "tabBar": {
+    "backgroundColor":"#ffffff",
+    "selectedColor": "#148aef",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath":"imgs/home.png",
+      "selectedIconPath":"imgs/home.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/my/index",
+      "iconPath":"imgs/my.png",
+      "selectedIconPath":"imgs/my.png",
+      "text": "我的"
+    }]
+  }
+}

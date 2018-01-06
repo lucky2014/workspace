@@ -1,0 +1,40 @@
+/**index.wxss**/
+page{ padding-bottom:20px;}
+.mealsList{ clear: both; border-radius:12px; height:150px; overflow:hidden; margin: 16px 12px 0; position:relative;}
+.mealsList .banner{ float:right; width:60%; height:150px; overflow:hidden;}
+.mealsList .left{ float: left; width:40%; height:150px; background:#777b84;}
+.mealsList .left image{ position:absolute; left:0; top:0;}
+.mealsList .left .mealsMark{ color:#fff; font-size:18px; font-weight:400; text-align:center; height:34px;}
+.mealsList .left .title{ color:#fff; font-size:18px; font-weight:400; text-align:center; line-height:28px; padding-top:10px;}
+.mealsList .left .info{ color:#edecec; font-size:13px; padding:0 10px; text-align:center; line-height:16px; height:40px;}
+.mealsList .left .price{ color:#fff; font-size:22px; font-weight:400; text-align:center; line-height:30px;}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+
+.navigator-hover {
+    color:blue;
+}
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+    color:red;
+}

@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="banner">
+    <image src="../../imgs/reg.jpg" bindload="imageLoad" style="width:{{viewWidth}}px; height: {{viewHeigh}}px;"></image>
+    <rich-text nodes="{{banner.nodes}}"></rich-text>
+    <text>套餐中包含保险订单，您还差最后一步，请完善信息！</text>
+</view>
+
+<text class="formTitle">填写被保人信息</text>
+<form bindsubmit="formSubmit" bindreset="formReset" class="formWrap">
+  <view class="section">
+    <view class="section__title">被保人姓名</view>
+    <input name="name" placeholder="被保人姓名" />
+  </view>
+  <view class="section">
+    <view class="section__title">身份证号码</view>
+    <input name="id" placeholder="身份证号码" />
+  </view>
+  <view class="btn-area">
+    <button formType="submit" disabled="{{submitDisabled}}">确定投保</button>
+  </view>
+</form>
+

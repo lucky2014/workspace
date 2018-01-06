@@ -1,0 +1,39 @@
+/**index.wxss**/
+.userinfo {
+  display: flex; width:100%; background:#fff;
+  flex-direction: row;
+  align-items: center; margin-bottom:14px; border-bottom:1px solid #eee;
+}
+.userinfo view{flex: 1.6; padding-left:14px;}
+
+.userinfo-avatar {
+  width: 140rpx;
+  height: 140rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  flex: 4
+}
+
+.wrap{border-top:1px solid #eee; }
+.section{position:relative; background:#fff; border-bottom:1px solid #eee; height:42px; line-height:42px; padding:0 16px; font-size:15px;}
+.section rich-text:after{ content: " ";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #C8C8CD;
+  border-style: solid;
+  -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: relative;
+  top: -2px;
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  right: 20px;
+}
+

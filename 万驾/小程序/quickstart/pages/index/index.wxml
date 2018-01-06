@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="mealsList" wx:for="{{list}}" wx:key="{{index}}" bindtap="bindViewTap" data-index="{{index}}">
+    <view class="left" style="background:{{item.bgColor}}">
+        <image wx:if="{{item.tipImgUrl}}" style="width:{{tipViewWidth}}px; height: {{tipViewHeigh}}px;" src="{{item.tipImgUrl}}" bindload="tipImageLoad"></image>
+        <rich-text nodes="{{item.nodes}}"></rich-text>
+    </view>
+    <view class="banner"><image src="{{item.imgUrl}}" style="width:{{viewWidth}}px; height: {{viewHeigh}}px;" bindload="bnImageLoad"></image></view>
+</view>
+
