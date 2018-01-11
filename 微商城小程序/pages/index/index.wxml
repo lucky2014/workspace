@@ -1,0 +1,34 @@
+<import src="addToCar/addToCar-template.wxml" />
+
+<import src="modules/search-template.wxml" />
+<import src="modules/notice-template.wxml" />
+<import src="modules/goods-template.wxml" />
+<import src="modules/forms-template.wxml" />
+
+<import src="templates/header22.wxml" />
+<import src="templates/headerShort.wxml" />
+<import src="templates/link22.wxml" />
+
+<view class="all-container" style="background:{{themeColor.bodyColor}}">
+  <!-- <template is="search" data="{{storeData}}"/> -->
+   <template is="header22" data="{{storeData,themeColor}}"/> 
+  <!-- <template is="headerShort" data="{{storeData,themeColor}}"/> -->
+  <block wx:for="{{modulesData}}" wx:key="moduleId">
+    <block wx:if="{{item.moduleId==4}}">
+        <template is="noticeModules" data="{{...noticeData}}"/>
+    </block>
+    <block wx:elif="{{item.moduleId==2}}">
+        <template is="goodsModules" data="{{moduleName:item.moduleName,goodsData:goodsData,type:item.type,themeColor:themeColor}}"/>
+    </block>
+    <block wx:elif="{{item.moduleId==3}}">
+        <template is="formsModules" data="{{formData,submitsData,themeColor}}"/>
+    </block>
+    
+  </block>
+  <template is="link22" data="{{storeData,themeColor}}"/>
+  
+  <view class="{{showCar? 'addShopping carShow':'addShopping'}}"></view>
+  <view class="addInner" animation="{{animationCarData}}">
+      <template is="addToCar" data="{{goodsDetailData,selectNum,attrValueList,includeGroup,slAll}}"/>
+  </view>
+</view>

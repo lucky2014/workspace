@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container">
+  	<view class="head">
+  		<image src="{{inforData.employeeImageUrl}}" class="neImg"></image>
+  		<view class="mainInfor">
+  			<view class="nickName">{{inforData.employeeNickName}}</view>
+  			<view class="userInfor">
+  				<text class="company">{{inforData.companyTitle}}</text>
+  				<text class="cardId">工号: {{inforData.employeeNumber}}</text>
+  				<text class="phone">手机：{{inforData.phone}}</text>
+  			</view>
+  		</view>
+  	</view>
+  	<view class="title">
+  		<image src="../imgs/dataLogo.png" class="dataLogo"></image>
+  		<view class="mainTitle">我的健康数据</view>
+  	</view>
+  	<view class="conResult" wx:for="{{arrow}}" wx:key="{{index}}">
+  		<view class="result">
+	  		<view class="reTitle">{{item.date}} 监测结果</view>
+	  		<view class="containData">
+	  			<view class="dataClass">姓名: <text class="data">{{item.employeeName}}</text></view>
+	  			<view class="dataClass2">Godin运动指数: <text class="data">{{item.moveIndex}}</text></view>
+	  		</view>
+	  		<view class="containData">
+	  			<view class="dataClass">工号: <text class="data">{{item.employeeNumber}}</text></view>
+	  			<view class="dataClass2">BMI: <text class="data">{{item.bmi}}</text></view>
+	  		</view>
+	  		<view class="containData">
+	  			<view class="dataClass">腰围: <text class="data">{{item.waistCircum}}</text></view>
+	  			<view class="dataClass2">臀围: <text class="data">{{item.hipCircum}}</text></view>
+	  		</view>
+	  		<view class="containData">
+	  			<view class="dataClass">腰臀比: <text class="data">{{item.waistToHip}}</text></view>
+	  			<view class="dataClass2">蔬菜摄入份数/天: <text class="data">{{item.fruitConsum}}</text></view>
+	  		</view>
+	  		<view class="containData">
+	  			<view class="dataClass">压力指数1: <text class="data">{{item.pressIndex1}}</text></view>
+	  			<view class="dataClass2">压力指数2: <text class="data">{{item.pressIndex2}}</text></view>
+	  		</view>
+  		</view>
+	  	<view class="advise">
+	  		<view class="adTitle">建议:</view>
+	  		<view class="adContent">{{item.suggestion}}</view>
+	  	</view>
+  	</view>
+</view>

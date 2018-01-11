@@ -16,7 +16,7 @@ Page({
       title: '加载中',
     });
     wx.request({
-      url: 'https://wx.yinnima.com/liujia-health-server/health/listStepsRecords.do?t='+new Date().getTime(),
+      url: 'https://yun.iliujia.com/liujia-health-server/health/listStepsRecords.do?t='+new Date().getTime(),
       data: {
         openId: app.globalData.openId,
       },

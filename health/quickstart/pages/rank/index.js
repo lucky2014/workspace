@@ -9,6 +9,11 @@ Page({
       url: '../goals/index?t='+new Date().getTime()
     });
   },
+  goReport: function(){
+    wx.navigateTo({
+      url: '../report/index?t='+new Date().getTime()
+    });
+  },
   goDesc: function(){
     wx.navigateTo({
       url: '../desc/index?t='+new Date().getTime()
@@ -35,13 +40,13 @@ Page({
       title: '加载中',
     });
     
-    wx.showModal({
+    /*wx.showModal({
       title: '提示',
       content: JSON.stringify(options,null,2),
       success: function(d) {
                   
       }
-    });
+    });*/
     //如果是分享页面来的
     if(options.isShare){
       me.setData({
@@ -180,7 +185,7 @@ Page({
         });
         const encryptedData = re.encryptedData;
         wx.request({
-          url: 'https://wx.yinnima.com/liujia-health-server/health/updateEmployeeStepInfo.do?t='+new Date().getTime(),
+          url: 'https://yun.iliujia.com/liujia-health-server/health/updateEmployeeStepInfo.do?t='+new Date().getTime(),
           data: {
             encryptedData: encryptedData,
             iv: re.iv,

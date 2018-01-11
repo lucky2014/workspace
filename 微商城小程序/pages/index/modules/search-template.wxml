@@ -1,0 +1,8 @@
+<template name="search"> 
+  <view class="search-container">
+    <input type='text' placeholder='搜索商品名称' confirm-type='search' class="searchGoods" />
+    <view class="searchBtn">
+      <image src="/imgs/searchIcon.png"></image>
+    </view>
+  </view>
+</template>

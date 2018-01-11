@@ -1,0 +1,333 @@
+/**index.wxss**/
+@import "../index/templates/storeInfo.wxss";
+@import "../index/addToCar/addToCar-template.wxss";
+page{color: #1C1B20;font-size: 28rpx;overflow-x:hidden;}
+.container {
+  background-color: #f0f0f0;
+}
+
+.swiper {
+  width: 100%;
+  height: 750rpx;
+}
+
+.swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+.side-img {
+  width: 100%;
+  height: 100%;
+}
+
+.rectangle2 {
+  width: 100%;
+  height: 200rpx;
+  background: #fff;
+}
+
+.rectangle2_1 {
+  width: 100%;
+  display: flex;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.rectangle2_1_1 {
+  position: relative;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+
+.rectangle2_1_2 {
+  height: 60rpx;
+  display: flex;
+  margin-top:8rpx;
+}
+
+.rectangle2_1_3 {
+  width: 158rpx;
+  height: 130rpx;
+}
+
+.rectangle2_text {
+  text-align: justify;
+  padding-left: 30rpx;
+  padding-right: 32rpx;
+}
+
+.text_1 {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #1c1b20;
+  line-height: 40rpx;
+}
+
+.rectangle2_shape {
+  width: 36rpx;
+  height: 36rpx;
+  padding: 26rpx 58rpx 0rpx 64rpx;
+}
+
+.img_shape {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.rectangle2_text2 {
+  width: 72rpx;
+  height: 34rpx;
+  padding: 0rpx 40rpx 20rpx 46rpx;
+}
+
+.rectangle2_price {
+  padding-left: 30rpx;
+}
+
+.rectangle2_price_text {
+  font-family: PingFangSC-Regular;
+  font-size: 40rpx;
+  color: #aa2327;
+  letter-spacing: -0.108rpx;
+}
+
+.rectangle2_sum {
+  position: absolute;bottom: 30rpx;right: 30rpx;
+  height: 34rpx;
+  padding-left: 28rpx;
+}
+
+.rectangle2_sum_text {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  color: #a2a2a2;
+  letter-spacing: -0.64rpx;
+}
+
+.text_2 {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #606060;
+  letter-spacing: -0.32px;
+}
+
+.rectangle3 {
+  width: 750rpx;
+  height: 180rpx;
+  background: #fff;
+  margin-top: 22rpx;
+}
+
+.rectangle3_1 {
+  height: 120rpx;
+  display: flex;
+  padding: 30rpx;
+}
+.rectangle3_1 .shopInfor22-container{
+  padding: 0;
+  width: 516rpx;
+  margin-right: 30rpx;
+}
+.rectangle3_1  .shopInfor22-container .shopPortrait{
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.rectangle3_1 .shopInfor22-container .shopName{
+  margin-top: 10rpx;
+}
+
+.rectangle3_1_3 {
+  width: 132rpx;
+  height: 48rpx;
+  margin-top:36rpx;
+}
+
+.rectangle3_1_3_text {
+  display: block;
+  width: 100%;
+  border: 1px solid #bea474;
+  border-radius: 20px;
+  color: #bea474;
+  padding: 4rpx 6rpx;
+  text-align: center;
+}
+
+.rectangle3_text {
+  width: 188rpx;
+  height: 44rpx;
+  padding-left: 24rpx;
+  padding-right: 226rpx;
+}
+
+.text_3 {
+  font-style: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #1c1b20;
+  letter-spacing: -0.86rpx;
+}
+
+.rectangle3_text2 {
+  width: 438rpx;
+  height: 76rpx;
+  display: flex;
+}
+
+.img2 {
+  width: 32rpx;
+  height: 38rpx;
+  padding-top: 20rpx;
+  padding-left: 24rpx;
+}
+
+.rectangle3_text3 {
+  width: 234rpx;
+  height: 34rpx;
+  padding-left: 8rpx;
+  padding-top: 8rpx;
+}
+
+.text_4 {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #a2a2a2;
+  letter-spacing: -0.64rpx;
+}
+
+.rectangle4 {
+  width: 100%;
+  background: #fff;
+  margin-top: 20rpx;
+}
+
+.rectangle4_1 {
+  width: 100%;
+}
+
+.rectangle4_text {
+  display: block;
+  text-align: center;
+  padding: 12rpx 0;
+}
+
+.text_5 {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #a2a2a2;
+}
+
+.img3 {
+  width: 100%;
+  height: 754rpx;
+}
+
+.rectangle4_2 {
+  width: 100%;
+  height: 316rpx;
+}
+
+.rectangle4_2_1 {
+  padding-left: 30rpx;
+}
+
+.text_6 {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #1c1b20;
+  padding-left: 30rpx;
+  line-height: 18rpx;
+}
+
+.img4 {
+  width: 100%;
+  height: 386rpx;
+}
+
+.rectangle4_3 {
+  display: flex;
+  box-shadow: 0 3px 9px 1px rgba(0,0,0,0.30);
+  height:116rpx;
+
+}
+
+.rectangle4_3_1 {
+  width: 50%;
+  display: flex;
+}
+
+.rectangle4_3_2 {
+  width: 388rpx;
+  padding: 0rpx 8rpx 8rpx 0;
+  height:100rpx;
+  margin-top:9rpx;
+}
+
+.rectangle4_3_1_1 {
+  padding: 0rpx 0 8rpx 32rpx;
+}
+
+.rectangle4_3_1_2 {
+  padding: 0rpx 0 8rpx 60rpx;
+}
+
+.rectangle4_3_1_3 {
+  padding: 0rpx 0 8rpx 60rpx;
+}
+
+.rectangle4-1 {
+  height: 40rpx;
+  padding-top: 16rpx;
+}
+
+.rectangle4-3 {
+  height: 40rpx;
+  padding-top: 16rpx;
+}
+
+.rectangle4-5 {
+  height: 40rpx;
+  padding-top: 16rpx;
+}
+
+.img5 {
+  width: 48rpx;
+  height: 40rpx;
+}
+
+.rectangle4-2 {
+  height: 34rpx;
+}
+
+.rectangle4-4 {
+  height: 34rpx;
+}
+
+.rectangle4-6 {
+  height: 34rpx;
+}
+
+.text_7 {
+  font-size: 24rpx;
+  color: #a2a2a2;
+}
+
+.text_8 {
+  display:inline-block;
+  width:388rpx;
+  height: 100rpx;
+  line-height:100rpx;
+  font-size: 28rpx;
+  color: #fff;
+  text-align:center;
+  background-color: #a2a2a2;
+  margin:9rpx 9rpx 9rpx 0;
+}
+
+
+.canBuy{width:194rpx;height:100rpx;line-height:100rpx;background: #AA2327;color:#fff;text-align:center;margin:9rpx 9rpx 9rpx 0;}
+.canAddToCar{background: #1C1B20;margin:9rpx 0;}

@@ -1,0 +1,34 @@
+.goodsContent{margin:0 30rpx;padding: 25rpx;background: #fff;}
+
+.onePics .goodsSingle{display: flex;flex-direction: row;margin-bottom:25rpx;}
+.onePics .goodsSingle:last-child{margin-bottom:0;}
+.onePics .goodsPic{width: 180rpx;height:180rpx;}
+.onePics .goodsDescri{margin-left:20rpx;width:490rpx;}
+.onePics .goodsDescri image{float:right; width: 70rpx;height: 70rpx;}
+.onePics .goodsDescri .goodsTitle{font-size:32rpx;min-height:80rpx; overflow:hidden; text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.onePics .priceOuter{margin-top:20rpx;}
+.onePics .goodsDescri .goodsPrice{color: #AA2327;font-size:40rpx;line-height:70rpx;}
+
+.bigPics .goodsSingle{width: 620rpx;display: inline-block;margin: 10rpx;}
+.bigPics .goodsPic{width: 620rpx;height:620rpx;}
+.bigPics .goodsDescri{padding:0 10rpx;}
+.bigPics .goodsDescri image{float:right; width: 70rpx;height: 70rpx;}
+.bigPics .goodsSingle:first-child .goodsTitle{font-size:32rpx;min-height:40rpx;margin-bottom:10rpx;overflow:hidden; text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:1; }
+.bigPics .goodsDescri .goodsPrice{color: #AA2327;font-size:40rpx;line-height:70rpx;}
+
+.twoPics .goodsSingle{display: inline-block;width:300rpx;margin: 10rpx;}
+.twoPics .goodsPic{width: 300rpx;height:300rpx;}
+.twoPics .goodsDescri{padding:0 10rpx;}
+.twoPics .goodsDescri image{float:right; width: 70rpx;height: 70rpx;}
+.twoPics .goodsDescri .goodsTitle{font-size:30rpx;min-height:80rpx; overflow:hidden; text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.twoPics .goodsDescri .goodsPrice{color: #AA2327;font-size:40rpx;line-height:70rpx;}
+
+.thirdPics .goodsSingle{display: inline-block;width:300rpx;margin: 10rpx;}
+.thirdPics .goodsPic{width: 300rpx;height:300rpx;}
+.thirdPics .goodsSingle:first-child{width: 620rpx;}
+.thirdPics .goodsSingle:first-child .goodsPic{width: 620rpx;height:620rpx;}
+.thirdPics .goodsDescri{padding:0 10rpx;}
+.thirdPics .goodsDescri image{float:right; width: 70rpx;height: 70rpx;}
+.thirdPics .goodsDescri .goodsTitle{font-size:30rpx;min-height:80rpx; overflow:hidden; text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.thirdPics .goodsSingle:first-child .goodsTitle{font-size:32rpx;min-height:40rpx;margin-bottom:10rpx;-webkit-line-clamp:1; }
+.thirdPics .goodsDescri .goodsPrice{color: #AA2327;font-size:40rpx;line-height:70rpx;}

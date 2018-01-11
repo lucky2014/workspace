@@ -1,0 +1,31 @@
+<template name="goodsModules"> 
+  <view class="goods-container">
+      <block wx:if="{{themeColor.templateId == 1}}">
+        <view class="common-header shortHeader">
+            <view style="border-color:{{themeColor.colorTheme5}};"></view>
+            <text style="color:{{themeColor.colorTheme5}};background:{{themeColor.bodyColor}}">{{moduleName}}</text>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="common-header">
+            <image src="http://122.224.214.231:8001/group1/M00/01/4A/wKgCRFpNirqAH20HAAAGCI15aqU931.png"></image>
+            <text style="color:{{themeColor.colorTheme5}}">{{moduleName}}</text>
+            <image src="http://122.224.214.231:8001/group1/M00/01/4A/wKgCRFpNir-AX0q-AAAFw768qZU941.png"></image>
+        </view>
+      </block>
+    <view class="{{type==1?'goodsContent onePics':type==2?'goodsContent twoPics':type==3?'goodsContent bigPics':type==4 || !type?'goodsContent thirdPics':''}}">
+      <block wx:for="{{goodsData}}" wx:key="id">
+        <view class="{{themeColor.templateId == 1?'goodsSingle shortSingle':'goodsSingle'}}" catchtap='gotoDetail' data-goodsid="{{item.id}}">
+          <image src="{{item.coverUrl}}" class="goodsPic"></image>
+          <view class="goodsDescri">
+            <text class="goodsTitle">{{item.name}}</text>
+            <view class="priceOuter">
+              <text class="goodsPrice">¥{{item.originPrice}}</text>
+              <image catchtap='isAddToCar' src="/imgs/shopCar.png" data-goodsid="{{item.id}}"></image>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</template>

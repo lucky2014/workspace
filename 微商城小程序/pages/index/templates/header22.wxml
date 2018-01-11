@@ -1,0 +1,8 @@
+<import src="storeInfo.wxml" />
+<template name="header22">
+  <view class="backPic22-container">
+    <image src="{{storeData.backPic}}" mode="widthFix"></image>
+    <text>{{storeData.shortIntro}}</text>
+  </view>
+  <template is="storeInfo" data="{{storeData}}"/> 
+</template>

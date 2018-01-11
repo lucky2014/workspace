@@ -1,0 +1,53 @@
+<template name="addToCar">
+  <view class="addHeader">
+    <block wx:if="{{slAll}}">
+      <image class="headPic" src="{{includeGroup[0].attributes[0].imgUrl}}"></image>
+      <view class="price-container">
+        <view class="price">¥
+          <text>{{includeGroup[0].sellPrice}}</text>
+        </view>
+        <view class="stock">库存
+          <text>{{includeGroup[0].currentNum}}</text>
+        </view>
+      </view>
+    </block>
+    <block wx:elif="{{!slAll}}">
+      <image class="headPic" src="{{goodsDetailData.coverUrl}}"></image>
+      <view class="price-container">
+        <view class="price">¥
+          <text>{{goodsDetailData.origin_price}}</text>
+        </view>
+        <view class="stock">库存
+          <text>{{goodsDetailData.totalCurrentNum}}</text>
+        </view>
+      </view>
+    </block>
+
+    <view class="cut-contianer" catchtap='cutAddToCar'>
+      <image src="/imgs/cut.png"></image>
+    </view>
+  </view>
+  <view class="addSelect">
+    <block wx:for="{{attrValueList}}" wx:key="attrName" wx:for-index="idx">
+      <view class="commonSelect">
+        <text class="attrName">{{item.attrKey}}</text>
+        <view class="attrVal">
+          <block wx:for="{{item.attrValues}}" wx:for-item="i" wx:key="i" wx:for-index="inds">
+              <text catchtap='selectSku' data-value="{{i}}" data-key="{{item.attrKey}}" data-index="{{idx}}" data-status="{{item.attrValueStatus[inds]}}" data-selectedvalue="{{item.selectedValue}}" class="{{idx==firstIndex || item.attrValueStatus[inds]?(i==item.selectedValue?'selected':''):'attr_value_disabled'}}" >{{i}}</text>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="numSelect">
+    <text class="num-title">购买数量</text>
+    <view class="num-container">
+      <text class="reduceNum numCom" catchtap="changeNumTap">-</text>
+      <view class="nowNum numCom">
+        <input type="number" value="{{selectNum}}" bindblur="bindblurtap" pattern="[0-9]*"/>
+      </view>
+      <text class="addNum numCom" catchtap="changeNumTap" data-isadd="1">+</text>
+    </view>
+  </view>
+  <text class="{{isBuy?'addCarButton isBuy':'addCarButton'}}" catchtap="addToCarBtn" data-status="{{isBuy}}" >{{isBuy?'立即下单':'加入购物车'}}</text>
+</template>

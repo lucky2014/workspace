@@ -1,0 +1,32 @@
+.addShopping{display: none; position: fixed;width: 100%;height: 100%;top: 0;left: 0; cursor: pointer;background: rgba(0,0,0,0.50);z-index: 999;}
+.addInner{}
+.carShow{display: block;}
+.addInner{position: fixed;left: 0;bottom: -900px;width: 100%; background: #fff;z-index: 999;}
+.addHeader{position: relative; height: 140rpx;}
+.addHeader .headPic{position: absolute;left: 26rpx;top: -70rpx; width: 180rpx;height: 180rpx;border: 1px solid #BEA474;}
+.addHeader .price-container{margin-left: 234rpx;padding-top: 16rpx;}
+.addHeader .price{font-size: 40rpx;color: #AA2327;}
+.addHeader .price em{font-size: 40rpx;color: #AA2327;font-style: normal;}
+.addHeader .stock,.addHeader .stock text{font-size: 24rpx;color: #a2a2a2;}
+.cut-contianer{position: absolute;right: 0px;top: 0px; display: inline-block;width: 80rpx;height: 80rpx; }
+.cut-contianer image{width: 40rpx;height: 40rpx;margin:20rpx 10rpx;}
+.addSelect{max-height: 460rpx;overflow-y:scroll;}
+.addSelect .commonSelect{border-top: 1px solid #F0F0F0;min-height: 180rpx;}
+.addSelect .commonSelect .attrName{display:block; margin: 20rpx 30rpx;font-weight: normal;}
+.addSelect .commonSelect .attrVal{overflow: hidden;margin: 0 14rpx 4rpx 14rpx;}
+.addSelect .commonSelect .attrVal text{float: left; height: 56rpx;line-height: 52rpx;margin:0 0 16rpx 16rpx;color: #a2a2a2; background: #fff;border: 1px solid #979797;border-radius: 40rpx;text-align: center;padding: 0 20rpx;}
+.addSelect .commonSelect view .b{border: 1px dotted #ccc;color: #ddd;}
+.addSelect .commonSelect .attrVal text.selected{background: #BEA474;color: #fff;border: none;}
+.addSelect .commonSelect .attrVal text.attr_value_disabled {color:#eee;}
+.numSelect{height: 80rpx; border-top: 1px solid #F0F0F0;border-bottom: 1px solid #F0F0F0;}
+.numSelect text{display: inline-block;line-height: 80rpx;}
+.num-title{margin-left: 30rpx;}
+.numSelect .num-container{float: right; display: inline-block;overflow: hidden;margin: 13rpx 30rpx;}
+.numSelect .numCom{float: left; display: inline-block;width: 50rpx;height: 50rpx;line-height: 50rpx; background: #f0f0f0;margin-right: 4rpx;text-align: center;}
+.numSelect .addNum,.numSelect .reduceNum{color: #a2a2a2;width: 90rpx;font-family: monospace;}
+.numSelect .nowNum input{background: #f0f0f0;outline: none;border: none;width: 100%;height: 100%; text-align: center;}
+.addCarButton{display: block; color: #fff;font-size: 32rpx;width: 92%;background: #1C1B20;height: 100rpx;line-height: 100rpx;text-align: center;margin: 18rpx auto 22rpx; }
+.addCarButton.isBuy{
+	background:#aa2327;
+}
+.addCarButton.cantBuy{background: #a2a2a2 !important;color: #fff;}

@@ -15,6 +15,7 @@
 
     <view class="desc" bindtap="goDesc"><image src="../imgs/qa.png" />活动说明</view>
     <view class="goals" bindtap="goGoals"><image src="../imgs/w.png" />目标</view>
+    <view class="goals" bindtap="goReport" style="top:55px; padding: 4px 8px 4px 10px; font-size:.84rem;">我的健康数据</view>
   </view>
 
   <view class="summary">

@@ -1,0 +1,10 @@
+.notice-container{position: relative; background: #F3C73A;height:68rpx;}
+.notice-container image{position: absolute;left: 28rpx;top: 16rpx; width: 40rpx;height:38rpx;z-index: 9;}
+.ovHide{position: absolute;left: 0;top:0;width: 76rpx;height: 100%;z-index: 1; background: #F3C73A; }
+.notice-container text{position: absolute;top:0;left:90rpx; color:#fff;line-height: 68rpx;white-space:nowrap;}
+.notice-container text.scrollText{animation: scroll 20s linear infinite;}
+@keyframes scroll
+{
+from {left: 750rpx;}
+to {left: -750rpx;}
+}

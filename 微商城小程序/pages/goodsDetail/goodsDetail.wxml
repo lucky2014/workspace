@@ -1,0 +1,103 @@
+<!--index.wxml-->
+<import src="../index/templates/storeInfo.wxml" />
+<import src="../index/addToCar/addToCar-template.wxml" />
+<view class="container">
+   <view class="rectangle1">
+       <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="300" circular="true" indicator-active-color="#fff">
+        <block wx:for="{{goodsDetailData.imgage.images}}" wx:for-index="index" wx:key="item">
+          <swiper-item>
+            <image src="{{item}}" class="side-img" style="height:{{width}}px" mode="center"></image>
+          </swiper-item>
+         </block>
+       </swiper>
+   </view>
+
+   <view class="rectangle2">
+       <view class="rectangle2_1">
+           <view class="rectangle2_1_1">
+               <view class="rectangle2_text">
+                   <text class="text_1">{{goodsDetailData.name}}</text>
+               </view>
+               <view class="rectangle2_1_2">
+                 <view class="rectangle2_price">
+                     <text class="rectangle2_price_text">¥{{goodsDetailData.origin_price}}</text>
+                 </view>
+                 <view class="rectangle2_sum"> 
+                    <text class="rectangle2_sum_text">库存 {{goodsDetailData.totalCurrentNum}}</text>
+                 </view>
+               </view>
+           </view>
+           <!-- <view class="rectangle2_1_3">
+               <view class="rectangle2_shape">
+                  <image src="/imgs/维码@2x.png" class="img_shape"></image>
+               </view> 
+               <view class="rectangle2_text2">
+                   <text class="text_2">分享码</text>
+               </view>  
+           </view> -->
+       </view>
+   </view>
+   
+   <view class="rectangle3">
+        <view class="rectangle3_1">
+            <template is="storeInfo" data="{{storeData}}"/>
+            <view class="rectangle3_1_3" catchtap="gotoIndex">
+               <text class="rectangle3_1_3_text">进店逛逛</text>
+            </view>
+        </view>
+   </view>
+
+   <view class="rectangle4">
+      <block wx:if="{{goodsDetailData.detailInfo}}">
+        <view class="rectangle4_1">
+            <view class="rectangle4_text">
+                <text class="text_5">—— 图文详情 ——</text>
+            </view> 
+            <rich-text nodes="{{goodsDetailData.detailInfo}}"></rich-text> 
+        </view> 
+      </block>
+      <view class="rectangle4_3">
+           <view class="rectangle4_3_1">
+               <view class="rectangle4_3_1_1" catchtap="gotoIndex">
+                  <view class="rectangle4-1">
+                  <image src="/imgs/铺@2x.png" class="img5"/>
+                  </view>
+                  <view class="rectangle4-2">
+                  <text class="text_7">店铺</text>
+                  </view>
+               </view>
+                <view class="rectangle4_3_1_2">
+                  <view class="rectangle4-3">
+                  <image src="/imgs/服@2x.png" class="img5"/>
+                  </view>
+                  <view class="rectangle4-4">
+                  <text class="text_7">客服</text>
+                  </view>
+               </view>
+                <view class="rectangle4_3_1_3">
+                  <view class="rectangle4-5">
+                  <image src="/imgs/物车@2x.png" class="img5"/>
+                  </view>
+                  <view class="rectangle4-6">
+                  <text class="text_7">购物车</text>
+                  </view>
+               </view>
+           </view>
+           <block wx:if="{{goodsDetailData.status == 1}}">
+              <text class="canAddToCar canBuy" data-status="1" catchtap='isAddToCar'>加入购物车</text>
+              <text class="canBuy" data-status="2" catchtap='isAddToCar'>立即下单</text>
+           </block>
+           <block wx:if="{{goodsDetailData.status == 2}}">
+              <text class="text_8" data-status="3">已售罄</text>
+           </block>
+           <block wx:if="{{goodsDetailData.status == 3 || goodsDetailData.status == 4}}">
+              <text class="text_8" data-status="4">已下架</text>
+           </block>
+      </view>
+   </view>
+
+    <view class="{{showCar? 'addShopping carShow':'addShopping'}}"></view>
+    <view class="addInner" animation="{{animationCarData}}">
+        <template is="addToCar" data="{{goodsDetailData,selectNum,attrValueList,includeGroup,slAll,isBuy}}"/>
+    </view>
+</view>

@@ -1,0 +1,19 @@
+.short_header{padding: 50rpx 36rpx 0 36rpx;}
+.short_header .storeName{display: block;text-align: center; font-size: 48rpx;letter-spacing: 2.66rpx;}
+.short_header .shortIntro{display: block;font-size: 24rpx;text-align: center;letter-spacing: 2rpx;margin-top: 16rpx;}
+.short_banner{display: block;width: 678rpx;margin-top: 60rpx;padding: 0 36rpx;}
+
+.short_link{ padding: 0 36rpx;}
+.short_link .link-container{display: flex;flex-direction: row;padding: 60rpx 0;}
+.short_link .portrait-container{margin-right: 20rpx;}
+.short_link .portrait{margin-top: 12rpx;width: 140rpx;height:140rpx;border-radius: 50%;}
+.short_link .linkDetail{display: flex;flex-direction: column;width: 516rpx;}
+.short_link .shopPhone{ margin-top: 26rpx;display: flex;flex-direction: row;}
+.short_link .shopPhone image{ width: 48rpx;height:48rpx; margin-right: 12rpx;}
+.short_link .shopPhone text{font-size: 36rpx;}
+.short_link .address{display: block;position: relative;min-height: 84rpx;}
+.short_link .address image{position: absolute;top: 50%;-webkit-transform: translate(0,-50%);display: block;width: 42rpx;height:52rpx;margin-right: 24rpx;}
+.short_link .address text{position: absolute;text-align: justify; margin-left: 60rpx;top: 50%;-webkit-transform: translate(0,-50%);} 
+
+.short_erweima{display: block; margin: 30rpx auto; width: 230rpx;height: 230rpx;}
+.short_erweima image{width: 100%;height: 100%;}

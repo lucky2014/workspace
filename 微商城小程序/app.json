@@ -1,0 +1,9 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/goodsDetail/goodsDetail"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#000"
+  }
+}

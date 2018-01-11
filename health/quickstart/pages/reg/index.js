@@ -62,7 +62,7 @@ Page({
               //请求验证
               if (res.code) {
                 wx.request({
-                  url: 'https://wx.yinnima.com/liujia-health-server/health/getLoginInfoByCode.do?t='+new Date().getTime(),
+                  url: 'https://yun.iliujia.com/liujia-health-server/health/getLoginInfoByCode.do?t='+new Date().getTime(),
                   data: {
                     code: res.code
                   },
@@ -125,7 +125,7 @@ Page({
   checkHasAuthen: function(openId){
     var me = this;
     wx.request({
-      url: 'https://wx.yinnima.com/liujia-health-server/health/checkHasAuthen.do?t='+new Date().getTime(),
+      url: 'https://yun.iliujia.com/liujia-health-server/health/checkHasAuthen.do?t='+new Date().getTime(),
       data: {
         employeeOpenid: openId
       }, 
@@ -176,7 +176,7 @@ Page({
       });
 
       wx.request({
-        url: 'https://wx.yinnima.com/liujia-health-server/health/getSmsCode.do?t='+new Date().getTime(),
+        url: 'https://yun.iliujia.com/liujia-health-server/health/getSmsCode.do?t='+new Date().getTime(),
         data: {
           openId: app.globalData.openId,
           phone: me.data.phone
@@ -249,7 +249,7 @@ Page({
         title: '加载中',
       });
       wx.request({
-        url: 'https://wx.yinnima.com/liujia-health-server/health/updateUserInfoAuthenBind.do?t='+new Date().getTime(),
+        url: 'https://yun.iliujia.com/liujia-health-server/health/updateUserInfoAuthenBind.do?t='+new Date().getTime(),
         data: datas,
         method: "post",
         header: {
@@ -287,7 +287,7 @@ Page({
   },
   checkHasSetStepsGoal: function(){
     wx.request({
-      url: 'https://wx.yinnima.com/liujia-health-server/health/checkHasSetStepsGoal.do?t='+new Date().getTime(),
+      url: 'https://yun.iliujia.com/liujia-health-server/health/checkHasSetStepsGoal.do?t='+new Date().getTime(),
       data: {
         openId: app.globalData.openId
       },

@@ -1,0 +1,7 @@
+<template name="noticeModules">  
+  <view class="notice-container">
+    <image src="/imgs/svg_notice.svg"></image>
+    <text class="{{noticeScroll?'scrollText':''}}">{{content}}</text>
+    <view class="ovHide"></view>
+  </view>
+</template>

@@ -25,7 +25,7 @@ Page({
   goRank: function(){
     var me = this;
     wx.request({
-      url: 'https://wx.yinnima.com/liujia-health-server/health/saveStepsGoal.do?t='+new Date().getTime(),
+      url: 'https://yun.iliujia.com/liujia-health-server/health/saveStepsGoal.do?t='+new Date().getTime(),
       data: {
         stepsGoal: me.data.step,
         openId: app.globalData.openId,
@@ -35,7 +35,6 @@ Page({
           'content-type': 'application/x-www-form-urlencoded'
       },
       success: function (res) {
-        console.log(res);
         if(res.data.resultCode == 1000){
           wx.reLaunch({
             url: '../rank/index?t='+new Date().getTime()
@@ -54,7 +53,7 @@ Page({
   onLoad: function(){
     var me = this;
     wx.request({
-      url: 'https://wx.yinnima.com/liujia-health-server/health/checkHasSetStepsGoal.do?t='+new Date().getTime(),
+      url: 'https://yun.iliujia.com/liujia-health-server/health/checkHasSetStepsGoal.do?t='+new Date().getTime(),
       data: {
         openId: app.globalData.openId
       },

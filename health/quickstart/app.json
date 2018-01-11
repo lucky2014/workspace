@@ -6,7 +6,8 @@
     "pages/detail/index",
     "pages/desc/index",
     "pages/weekRank/index",
-    "pages/error/index"
+    "pages/error/index",
+    "pages/report/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

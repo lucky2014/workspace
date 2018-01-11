@@ -1,0 +1,107 @@
+/**index.wxss**/
+page{
+	background: #f2f2f2; font-size:1rem;
+}
+.head{
+	background:#ffffff;
+	width:630rpx;
+	padding:34rpx 60rpx;
+	position:relative;
+	display:flex;
+}
+.head .neImg{
+	width:180rpx;
+	height:180rpx;
+	float: left;
+	display: block;
+	border-radius:50%;	
+}
+.head .mainInfor{
+	display:block;
+	position:absolute;
+	float:left;
+	width:60%;
+	left:280rpx;
+	top:48%;
+	margin-top:-76rpx;
+}
+.head .mainInfor .nickName{
+	font-size:22px;
+}
+.head .mainInfor .userInfor{
+	padding-top:14rpx;
+	font-size:14px;
+	color:#5c6370;
+}
+.head .mainInfor .userInfor .company{
+	display:inline-block;
+	width:380rpx;
+}
+.head .mainInfor .userInfor .phone{
+	display:inline-block;
+	margin-top:10rpx;
+	width:290rpx;
+}
+.head .mainInfor .userInfor .cardId{
+	display:inline-block;
+	width:150rpx;
+}
+.title{
+	margin-top:22rpx;
+	padding:20rpx 40rpx;
+	background:#ffffff;
+	display:flex;
+}
+.title .dataLogo{
+	width:60rpx;
+	height:80rpx;
+	float:left;
+}
+.title .mainTitle{
+	line-height:80rpx;
+	margin-left:20rpx; font-size:.9rem;
+}
+.conResult{
+	margin-top:20rpx;
+}
+.result{
+	background:#fff;
+	padding:0 30rpx 50rpx; 
+}
+.result .reTitle{
+	line-height:100rpx;
+	border-bottom:1px solid #ececec;
+	color:#2e3033;
+}
+.result .containData{
+	display:flex;
+	font-size:18px;
+	margin-top:20rpx;
+}
+.result .containData .dataClass{
+	width:310rpx;
+	color:#757b86; font-size:.9rem;
+}
+.result .containData .dataClass2{
+	width:340rpx;
+	color:#757b86; font-size:.9rem;
+}
+.result .containData .data{
+	color:#2e3033; font-size:.9rem;
+}
+.advise{
+	background:#fffdf5;
+	padding:0 30rpx 30rpx; font-size:.9rem;
+}
+.advise .adTitle{
+	line-height:80rpx;
+	border-bottom:1px solid #ececec;
+}
+.advise .adContent{
+	color:#69707b;
+	line-height:50rpx;
+	text-indent:2em;
+	text-align:justify;
+	padding: 20rpx 0 0;
+	font-size:.9rem;
+}

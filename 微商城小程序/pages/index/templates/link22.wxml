@@ -1,0 +1,16 @@
+<template name="link22">
+  <view class="link22_container">
+    <block  wx:if="{{contactQrCode}}">
+      <view class="link22Erweima">
+        <image src="{{contactQrCode}}"></image>
+        <text class="linkTips" style="color:{{themeColor.Color}}">扫一扫加我为好友</text>
+      </view>
+    </block> 
+    <block  wx:if="{{address}}">
+      <view class="link22Address">
+        <image src="/imgs/address.png"></image>
+        <text>{{address}}</text>
+      </view>
+    </block>
+  </view>
+</template>

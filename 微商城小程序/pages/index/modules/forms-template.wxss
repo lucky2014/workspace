@@ -1,0 +1,10 @@
+.form-content{margin:0 30rpx;background:#fff;padding: 40rpx;}
+.shortform{margin:0;}
+.input-container{position: relative;}
+.input-container view{position: absolute;top: 0;left:0; background:rgba(102,163,137,0.2);width: 100%;height:80rpx;border-radius:20rpx;
+}
+.form-container input{border-radius: 20rpx;background:none;
+margin-top:20rpx;height:80rpx;padding:0 36rpx;color:#56997C;}
+.form-container .input-placeholder{color:#a0a0a0;}
+.submitBtn{background: #56997C;margin-top:40rpx;border-radius: 20rpx;height:80rpx;line-height:80rpx; color:#fff;margin-bottom:28rpx;font-size:36rpx;}
+.formTips{color: #cacaca;font-size:24rpx;}

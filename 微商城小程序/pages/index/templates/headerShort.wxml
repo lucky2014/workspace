@@ -1,0 +1,26 @@
+<template name="headerShort">
+    <view class="short_header">
+      <text class="storeName" style="color:{{themeColor.Color}}">{{storeData.storeName}}</text>
+      <text class="shortIntro" style="color:{{themeColor.colorTheme6}}">{{storeData.shortIntro}}</text>
+    </view>
+    <image src="{{storeData.backPic}}" mode="widthFix" class="short_banner"></image>
+    <view class="short_link shopInfor">
+      <view class="link-container">
+        <view class="portrait-container">
+            <image class="portrait" src="{{storeData.storeLogo}}"></image>
+        </view>
+        <view class="linkDetail">
+          <view class="shopPhone">
+              <image src="/imgs/shopPhoneIcon.png"></image>
+              <text style="color:{{themeColor.colorTheme6}}">{{storeData.contactPhone}}</text>
+          </view>
+          <view class="address">
+            <view class="addimg-container">
+              <image src="/imgs/addresspng1.png"></image>
+            </view>
+            <text style="color:{{themeColor.colorTheme6}}">{{storeData.address}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+</template>

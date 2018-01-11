@@ -1,0 +1,10 @@
+.shopInfor22-container{display: flex;flex-direction: row;padding: 40rpx;background: #fff;}
+.shopInfor22-container .shopPortrait{width: 140rpx;height:140rpx;margin-right: 40rpx;border-radius: 50%;}
+.shopInfor22-container .shopDetail{display: flex;flex-direction: column;}
+.shopInfor22-container .shopFor{display: flex;flex-direction: row;}
+.shopInfor22-container .shopFor image{width: 44rpx;height:44rpx;}
+.shopInfor22-container .shopFor text{color: #5e5e5e;margin-left:12rpx;}
+.shopInfor22-container .shopName{margin-top:20rpx;}
+.shopInfor22-container .shopName text{font-size:36rpx;line-height: 48rpx;}
+.shopInfor22-container .shopPhone{margin-top:16rpx;}
+.shopInfor22-container .shopPhone text{line-height: 44rpx;}

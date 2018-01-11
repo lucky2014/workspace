@@ -1,0 +1,16 @@
+
+<template name="storeInfo">
+  <view class="shopInfor22-container">
+      <image src="{{storeData.storeLogo}}" class="shopPortrait"></image>
+      <view class="shopDetail">
+        <view class="shopName shopFor">
+          <image src="/imgs/shopNameIcon.png"></image>
+          <text>{{storeData.storeName}}</text>
+        </view>
+        <view class="shopPhone shopFor">
+          <image src="/imgs/shopPhoneIcon.png"></image>
+          <text>{{storeData.contactPhone}}</text>
+        </view>
+      </view>
+    </view>
+</template>

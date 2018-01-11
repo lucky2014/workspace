@@ -5,10 +5,10 @@
 
 
 <view class="content">
-	<view><label>1、</label><view>所有参与“运动大比拼”活动的小伙伴每天的运动步数都会被系统记录哦~步数将会累积，每周进行排名。</view></view>
-    <view><label>2、</label><view>每周累积步数按降序排名，次周累积步数将清零，重新累积。</view></view>
-    <view><label>3、</label><view>步数累积周期为每周一 00:00:00至周日23:59:59。</view></view>
-    <view><label>4、</label><view>每周公司将对排名前3的小伙伴颁发奖励呦~</view></view>
+	<view><label>1、</label><view>所有参与“运动大挑战”活动的小伙伴每天的运动步数需登录小程序后才会更新到统计排名中，若不登录则无法更新统计排名。
+</view></view>
+    <view><label>2、</label><view>排名为按周累积，次周累积步数将清零。</view></view>
+    <view><label>3、</label><view>步数累积周期为每周一00:00:00至周日23:59:59。</view></view>
 </view>
 
 

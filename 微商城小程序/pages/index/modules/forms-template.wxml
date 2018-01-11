@@ -1,0 +1,29 @@
+<template name="formsModules">
+  <block wx:for="{{formData}}" wx:key="formId">
+    <view class="form-container" data-formid="{{item.formId}}" data-endtime="{{item.endTime}}">
+      <block wx:if="{{themeColor.templateId == 1}}">
+        <view class="common-header shortHeader">
+            <view style="border-color:{{themeColor.colorTheme5}};"></view>
+            <text style="color:{{themeColor.colorTheme5}};background:{{themeColor.bodyColor}}">{{item.title}}</text>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="common-header">
+            <image src="http://122.224.214.231:8001/group1/M00/01/4A/wKgCRFpNirqAH20HAAAGCI15aqU931.png"></image>
+            <text style="color:{{themeColor.colorTheme5}}">{{item.title}}</text>
+            <image src="http://122.224.214.231:8001/group1/M00/01/4A/wKgCRFpNir-AX0q-AAAFw768qZU941.png"></image>
+        </view>
+      </block>
+      <view class="{{themeColor.templateId == 1?'form-content shortform':'form-content'}}">
+        <block wx:for="{{item.columns}}" wx:key="columnId" wx:for-item="i">
+          <view class="input-container">
+            <input type="text" placeholder='{{i.columnTitle}}' focus="{{submitsData[item.formId][i.columnId].sign}}" data-columnid="{{i.columnId}}" data-formid="{{item.formId}}" bindblur="bindblurForm"/>
+            <view style="background:{{themeColor.inputTheme}}"></view>
+          </view>
+        </block>
+        <button class="submitBtn" data-formid="{{item.formId}}" catchtap="formSubmit" style="background:{{themeColor.Color}}">提交</button>
+        <text class="formTips">{{item.remark}}</text>
+      </view>
+    </view>
+  </block>
+</template>

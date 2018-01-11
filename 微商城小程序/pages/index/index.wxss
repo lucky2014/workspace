@@ -1,0 +1,23 @@
+@import "addToCar/addToCar-template.wxss";
+
+@import "modules/search-template.wxss";
+@import "modules/notice-template.wxss";
+@import "modules/goods-template.wxss";
+@import "modules/forms-template.wxss";
+
+@import "templates/header22.wxss";
+@import "templates/headerShort.wxss";
+@import "templates/link22.wxss";
+
+@import "templates/storeInfo.wxss";
+
+page{color: #1C1B20;font-size: 28rpx;overflow-x:hidden;}
+.all-container{overflow-x: hidden;}
+
+.common-header{position:relative;height:50rpx; text-align: center;margin:20px 0 15px 0;display:inline-block;left:50%;-webkit-transform:translate(-50%,0);}
+.common-header image{width: 32rpx;height: 32rpx;float:left;margin-top:12rpx;}
+.common-header text{color: #56997C;font-size: 36rpx;margin:0 20rpx;float:left;}
+.shortHeader view{position:absolute;top:50%;left:50%;-webkit-transform: translate(-50%,-50%);border-top: 1px solid #303030;width:750rpx;}
+.shortHeader{display:block}
+.shortHeader text{position:absolute;top:50%;left:50%;-webkit-transform: translate(-50%,-50%);background:#fff;padding: 0 20rpx;z-index:9;}
+

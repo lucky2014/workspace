@@ -1,0 +1,6 @@
+.backPic22-container{position: relative;width: 100%;}
+.backPic22-container image{display: block; width: 100%;height: 100%;}
+.backPic22-container text{position: absolute;left: 0;bottom: 0;background: rgba(0,0,0,0.40);color: #fff;width: 100%;padding: 8px 10px;letter-spacing: 2.16rpx;}
+
+
+
